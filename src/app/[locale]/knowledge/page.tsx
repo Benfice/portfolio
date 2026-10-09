@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
+import { KnowledgeMap } from "@/components/KnowledgeMap";
 import { PageHeader } from "@/components/PageHeader";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
@@ -41,6 +42,24 @@ export default async function KnowledgePage({
         lead={t("lead")}
       />
 
+      <Section className="pt-0">
+        <Container>
+          <SectionHeading title={t("mapTitle")} />
+          <KnowledgeMap
+            themes={knowledgeThemes.map((theme) => ({
+              id: theme.id,
+              title: pickLocalized(theme.title, locale),
+              concepts: theme.concepts.map((concept) => ({
+                id: concept.id,
+                title: pickLocalized(concept.title, locale),
+                summary: pickLocalized(concept.summary, locale),
+                tags: concept.tags,
+              })),
+            }))}
+          />
+        </Container>
+      </Section>
+
       {knowledgeThemes.map((theme) => (
         <Section key={theme.id} className="pt-0">
           <Container>
@@ -73,14 +92,6 @@ export default async function KnowledgePage({
           </Container>
         </Section>
       ))}
-
-      <Section className="pt-0">
-        <Container>
-          <p className="rounded-2xl border border-dashed border-border px-6 py-8 text-center text-sm text-muted">
-            {t("mapNote")}
-          </p>
-        </Container>
-      </Section>
     </>
   );
 }

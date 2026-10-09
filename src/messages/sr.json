@@ -74,8 +74,11 @@
   "Knowledge": {
     "eyebrow": "Znanje",
     "title": "Mapa pojmova koja raste sa mnom.",
-    "lead": "Beleške, metode i alati koje stalno istražujem. Interaktivna mapa (Mindset Map) stiže u narednom koraku.",
-    "mapNote": "Interaktivna mapa (Mindset Map) uskoro stiže."
+    "lead": "Beleške, metode i alati koje stalno istražujem, organizovani na interaktivnoj mapi.",
+    "mapTitle": "Mapa znanja",
+    "mapHint": "Istražite mapu tastaturom (Tab + Enter). Izaberite temu ili oznaku da je istaknete, pojam za prikaz detalja.",
+    "mapReset": "Resetuj izbor",
+    "relatedConcepts": "Povezani pojmovi"
   },
   "About": {
     "eyebrow": "O meni",

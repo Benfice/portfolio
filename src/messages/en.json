@@ -74,8 +74,11 @@
   "Knowledge": {
     "eyebrow": "Knowledge",
     "title": "A map of concepts that grows with me.",
-    "lead": "Notes, methods and tools I keep exploring. The interactive map (Mindset Map) arrives in a later step.",
-    "mapNote": "The interactive map (Mindset Map) is coming soon."
+    "lead": "Notes, methods and tools I keep exploring, organised on an interactive map.",
+    "mapTitle": "Knowledge map",
+    "mapHint": "Explore the map with the keyboard (Tab + Enter). Select a theme or a tag to highlight it, a concept to show its details.",
+    "mapReset": "Reset selection",
+    "relatedConcepts": "Related concepts"
   },
   "About": {
     "eyebrow": "About",
