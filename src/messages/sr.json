@@ -1,0 +1,53 @@
+{
+  "Metadata": {
+    "title": "Benfice — QA Lead i fotograf",
+    "description": "Benfice portfolio: QA profil, fotografije i mapa znanja."
+  },
+  "Nav": {
+    "primary": "Glavna navigacija",
+    "home": "Početna",
+    "photography": "Fotografija",
+    "qa": "QA",
+    "knowledge": "Znanje",
+    "about": "O meni",
+    "contact": "Kontakt"
+  },
+  "Home": {
+    "eyebrow": "QA Lead i fotograf",
+    "title": "Gradim pouzdane proizvode i pričam svet kroz slike.",
+    "lead": "Dobrodošli na moj portfolio: osiguranje kvaliteta, fotografija i mapa znanja koja se stalno razvija.",
+    "exploreQa": "Pogledaj moj QA profil",
+    "explorePhotography": "Pogledaj moje fotografije"
+  },
+  "Pages": {
+    "photography": {
+      "title": "Fotografija",
+      "description": "Galerije i albumi — uskoro."
+    },
+    "qa": {
+      "title": "QA",
+      "description": "Predstavljanje, veštine, iskustvo i QA projekti — uskoro."
+    },
+    "knowledge": {
+      "title": "Znanje",
+      "description": "Mapa uma, pojmovi i veze — uskoro."
+    },
+    "about": {
+      "title": "O meni",
+      "description": "Moje iskustvo i pristup — uskoro."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Kako da me kontaktirate — uskoro."
+    }
+  },
+  "Theme": {
+    "toggle": "Promeni temu"
+  },
+  "Language": {
+    "label": "Promeni jezik"
+  },
+  "Footer": {
+    "rights": "© 2026 Benfice. Sva prava zadržana."
+  }
+}

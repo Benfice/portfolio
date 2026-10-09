@@ -1,0 +1,53 @@
+{
+  "Metadata": {
+    "title": "Benfice — QA Lead & Photographer",
+    "description": "Benfice's portfolio: QA Lead profile, photography and a growing knowledge base."
+  },
+  "Nav": {
+    "primary": "Main navigation",
+    "home": "Home",
+    "photography": "Photography",
+    "qa": "QA",
+    "knowledge": "Knowledge",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "Home": {
+    "eyebrow": "QA Lead & Photographer",
+    "title": "I build reliable products and tell the world through images.",
+    "lead": "Welcome to my portfolio: quality assurance, photography and an ever-evolving knowledge map.",
+    "exploreQa": "Explore my QA profile",
+    "explorePhotography": "View my photographs"
+  },
+  "Pages": {
+    "photography": {
+      "title": "Photography",
+      "description": "Galleries and albums — coming soon."
+    },
+    "qa": {
+      "title": "QA",
+      "description": "Overview, skills, experience and QA projects — coming soon."
+    },
+    "knowledge": {
+      "title": "Knowledge",
+      "description": "Mindset Map, concepts and relationships — coming soon."
+    },
+    "about": {
+      "title": "About",
+      "description": "My background and approach — coming soon."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "How to reach me — coming soon."
+    }
+  },
+  "Theme": {
+    "toggle": "Toggle theme"
+  },
+  "Language": {
+    "label": "Change language"
+  },
+  "Footer": {
+    "rights": "© 2026 Benfice. All rights reserved."
+  }
+}
