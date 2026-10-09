@@ -65,7 +65,11 @@
   "Photography": {
     "eyebrow": "Photographie",
     "title": "Des images, entre lumière naturelle et composition.",
-    "lead": "Une sélection de séries personnelles : voyage, architecture et scènes du quotidien. Les galeries interactives arriveront bientôt."
+    "lead": "Une sélection de séries personnelles : voyage, architecture et scènes du quotidien.",
+    "openPhoto": "Ouvrir la photo « {title} »",
+    "close": "Fermer",
+    "previous": "Photo précédente",
+    "next": "Photo suivante"
   },
   "Knowledge": {
     "eyebrow": "Knowledge",

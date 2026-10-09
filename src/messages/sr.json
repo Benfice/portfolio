@@ -65,7 +65,11 @@
   "Photography": {
     "eyebrow": "Fotografija",
     "title": "Slike, između prirodnog svetla i kompozicije.",
-    "lead": "Izbor ličnih serija: putovanja, arhitektura i svakodnevne scene. Interaktivne galerije uskoro stižu."
+    "lead": "Izbor ličnih serija: putovanja, arhitektura i svakodnevne scene.",
+    "openPhoto": "Otvori fotografiju „{title}“",
+    "close": "Zatvori",
+    "previous": "Prethodna fotografija",
+    "next": "Sledeća fotografija"
   },
   "Knowledge": {
     "eyebrow": "Znanje",
