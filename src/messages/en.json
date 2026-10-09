@@ -1,10 +1,14 @@
 {
   "Metadata": {
-    "title": "Benfice — QA Lead & Photographer",
-    "description": "Benfice's portfolio: QA Lead profile, photography and a growing knowledge base."
+    "title": "Benoît Freulon — QA Lead & Photographer",
+    "description": "Benoît Freulon's portfolio: QA Lead profile, photography and a growing knowledge base."
   },
   "Nav": {
     "primary": "Main navigation",
+    "mobile": "Main menu",
+    "skipToContent": "Skip to content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
     "home": "Home",
     "photography": "Photography",
     "qa": "QA",
@@ -17,37 +21,75 @@
     "title": "I build reliable products and tell the world through images.",
     "lead": "Welcome to my portfolio: quality assurance, photography and an ever-evolving knowledge map.",
     "exploreQa": "Explore my QA profile",
-    "explorePhotography": "View my photographs"
+    "explorePhotography": "View my photographs",
+    "highlightsEyebrow": "Explore",
+    "highlightsTitle": "Three facets, one standard.",
+    "qaTitle": "Quality assurance",
+    "qaBody": "Testing, strategy, automation and quality in service of reliable products.",
+    "qaLink": "Explore my QA profile",
+    "photographyTitle": "Photography",
+    "photographyBody": "Editorial and travel images, balancing natural light and composition.",
+    "photographyLink": "Browse the galleries",
+    "knowledgeTitle": "Knowledge base",
+    "knowledgeBody": "A mind map of concepts, methods and tools I keep exploring.",
+    "knowledgeLink": "Explore the map",
+    "contactEyebrow": "Let's work together",
+    "contactTitle": "A mission, a photo project or a question?",
+    "contactBody": "Let's talk about software quality, photography, or anything in between.",
+    "contactCta": "Get in touch"
   },
-  "Pages": {
-    "photography": {
-      "title": "Photography",
-      "description": "Galleries and albums — coming soon."
-    },
-    "qa": {
-      "title": "QA",
-      "description": "Overview, skills, experience and QA projects — coming soon."
-    },
-    "knowledge": {
-      "title": "Knowledge",
-      "description": "Mindset Map, concepts and relationships — coming soon."
-    },
-    "about": {
-      "title": "About",
-      "description": "My background and approach — coming soon."
-    },
-    "contact": {
-      "title": "Contact",
-      "description": "How to reach me — coming soon."
-    }
+  "Qa": {
+    "eyebrow": "Quality assurance",
+    "title": "Quality, from manual testing to strategy.",
+    "lead": "I help product teams ship reliable software: test strategy, automation, continuous quality and a daily quality culture.",
+    "experienceEyebrow": "Background",
+    "experienceTitle": "Experience",
+    "skillsEyebrow": "Toolbox",
+    "skillsTitle": "Skills",
+    "projectsEyebrow": "Selected work",
+    "projectsTitle": "Projects",
+    "ctaTitle": "Need help with quality?",
+    "ctaBody": "Let's talk about your test strategy, automation or quality challenges.",
+    "ctaButton": "Get in touch"
+  },
+  "Photography": {
+    "eyebrow": "Photography",
+    "title": "Images, between natural light and composition.",
+    "lead": "A selection of personal series: travel, architecture and everyday scenes. Interactive galleries are coming soon."
+  },
+  "Knowledge": {
+    "eyebrow": "Knowledge",
+    "title": "A map of concepts that grows with me.",
+    "lead": "Notes, methods and tools I keep exploring. The interactive map (Mindset Map) arrives in a later step.",
+    "mapNote": "The interactive map (Mindset Map) is coming soon."
+  },
+  "About": {
+    "eyebrow": "About",
+    "principlesTitle": "What guides me",
+    "ctaButton": "Get in touch"
+  },
+  "Contact": {
+    "eyebrow": "Contact",
+    "title": "Let's talk about your project.",
+    "lead": "A QA mission, a photo project or just want to connect? Drop me a line.",
+    "emailLabel": "Email me",
+    "socialsTitle": "Find me online",
+    "locationLabel": "Location",
+    "availabilityLabel": "Availability"
   },
   "Theme": {
     "toggle": "Toggle theme"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "body": "The page you are looking for does not exist or has been moved.",
+    "back": "Back to home"
   },
   "Language": {
     "label": "Change language"
   },
   "Footer": {
-    "rights": "© 2026 Benfice. All rights reserved."
+    "nav": "Footer navigation",
+    "rights": "© 2026 Benoît Freulon. All rights reserved."
   }
 }

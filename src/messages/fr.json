@@ -1,10 +1,14 @@
 {
   "Metadata": {
-    "title": "Benfice — QA Lead & Photographe",
-    "description": "Portfolio de Benfice : profil QA Lead, photographies et base de connaissances."
+    "title": "Benoît Freulon — QA Lead & Photographe",
+    "description": "Portfolio de Benoît Freulon : profil QA Lead, photographies et base de connaissances."
   },
   "Nav": {
     "primary": "Navigation principale",
+    "mobile": "Menu principal",
+    "skipToContent": "Aller au contenu",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
     "home": "Accueil",
     "photography": "Photographie",
     "qa": "QA",
@@ -17,37 +21,75 @@
     "title": "Je construis des produits fiables et je raconte le monde en images.",
     "lead": "Bienvenue sur mon portfolio : assurance qualité, photographie et une carte de connaissances en constante évolution.",
     "exploreQa": "Découvrir mon profil QA",
-    "explorePhotography": "Voir mes photographies"
+    "explorePhotography": "Voir mes photographies",
+    "highlightsEyebrow": "Explorer",
+    "highlightsTitle": "Trois facettes, une même exigence.",
+    "qaTitle": "Assurance qualité",
+    "qaBody": "Tests, stratégie, automatisation et qualité au service de produits fiables.",
+    "qaLink": "Voir mon profil QA",
+    "photographyTitle": "Photographie",
+    "photographyBody": "Des images éditoriales et de voyage, entre lumière naturelle et composition.",
+    "photographyLink": "Parcourir les galeries",
+    "knowledgeTitle": "Base de connaissances",
+    "knowledgeBody": "Une carte mentale de concepts, méthodes et outils que j'explore.",
+    "knowledgeLink": "Explorer la carte",
+    "contactEyebrow": "Travaillons ensemble",
+    "contactTitle": "Une mission, un projet photo ou une question ?",
+    "contactBody": "Parlons de qualité logicielle, de photographie ou de tout ce qui se trouve entre les deux.",
+    "contactCta": "Me contacter"
   },
-  "Pages": {
-    "photography": {
-      "title": "Photographie",
-      "description": "Galeries et albums — bientôt disponibles."
-    },
-    "qa": {
-      "title": "QA",
-      "description": "Présentation, compétences, expérience et projets QA — bientôt disponibles."
-    },
-    "knowledge": {
-      "title": "Knowledge",
-      "description": "Mindset Map, concepts et relations — bientôt disponibles."
-    },
-    "about": {
-      "title": "À propos",
-      "description": "Mon parcours et ma démarche — bientôt disponibles."
-    },
-    "contact": {
-      "title": "Contact",
-      "description": "Comment me joindre — bientôt disponible."
-    }
+  "Qa": {
+    "eyebrow": "Assurance qualité",
+    "title": "La qualité, du test manuel à la stratégie.",
+    "lead": "J'accompagne les équipes produit pour livrer des logiciels fiables : stratégie de test, automatisation, qualité continue et culture qualité au quotidien.",
+    "experienceEyebrow": "Parcours",
+    "experienceTitle": "Expérience",
+    "skillsEyebrow": "Boîte à outils",
+    "skillsTitle": "Compétences",
+    "projectsEyebrow": "Réalisations",
+    "projectsTitle": "Projets",
+    "ctaTitle": "Un besoin en qualité ?",
+    "ctaBody": "Discutons de votre stratégie de test, de votre automatisation ou de vos enjeux de qualité.",
+    "ctaButton": "Me contacter"
+  },
+  "Photography": {
+    "eyebrow": "Photographie",
+    "title": "Des images, entre lumière naturelle et composition.",
+    "lead": "Une sélection de séries personnelles : voyage, architecture et scènes du quotidien. Les galeries interactives arriveront bientôt."
+  },
+  "Knowledge": {
+    "eyebrow": "Knowledge",
+    "title": "Une carte de concepts qui grandit avec moi.",
+    "lead": "Notes, méthodes et outils que j'explore. La carte interactive (Mindset Map) arrive dans une prochaine étape.",
+    "mapNote": "La carte interactive (Mindset Map) arrive bientôt."
+  },
+  "About": {
+    "eyebrow": "À propos",
+    "principlesTitle": "Ce qui me guide",
+    "ctaButton": "Me contacter"
+  },
+  "Contact": {
+    "eyebrow": "Contact",
+    "title": "Parlons de votre projet.",
+    "lead": "Une mission QA, un projet photo ou simplement envie d'échanger ? Écrivez-moi.",
+    "emailLabel": "Écrivez-moi",
+    "socialsTitle": "Retrouvez-moi",
+    "locationLabel": "Localisation",
+    "availabilityLabel": "Disponibilité"
   },
   "Theme": {
     "toggle": "Changer de thème"
+  },
+  "NotFound": {
+    "title": "Page introuvable",
+    "body": "La page que vous cherchez n'existe pas ou a été déplacée.",
+    "back": "Retour à l'accueil"
   },
   "Language": {
     "label": "Changer de langue"
   },
   "Footer": {
-    "rights": "© 2026 Benfice. Tous droits réservés."
+    "nav": "Navigation de pied de page",
+    "rights": "© 2026 Benoît Freulon. Tous droits réservés."
   }
 }

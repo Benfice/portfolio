@@ -19,6 +19,17 @@ export default defineConfig({
       name: "chromium-desktop",
       use: { ...devices["Desktop Chrome"] },
     },
+    {
+      name: "chromium-mobile",
+      use: { ...devices["Pixel 7"] },
+    },
+    {
+      name: "chromium-tablet",
+      use: {
+        ...devices["Desktop Chrome"],
+        viewport: { width: 834, height: 1112 },
+      },
+    },
   ],
   webServer: {
     command: process.env.CI ? "npm run start" : "npm run dev",

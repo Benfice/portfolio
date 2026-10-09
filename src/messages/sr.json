@@ -1,10 +1,14 @@
 {
   "Metadata": {
-    "title": "Benfice — QA Lead i fotograf",
-    "description": "Benfice portfolio: QA profil, fotografije i mapa znanja."
+    "title": "Benoît Freulon — QA Lead i fotograf",
+    "description": "Portfolio Benoît Freulon: QA profil, fotografije i mapa znanja."
   },
   "Nav": {
     "primary": "Glavna navigacija",
+    "mobile": "Glavni meni",
+    "skipToContent": "Pređi na sadržaj",
+    "openMenu": "Otvori meni",
+    "closeMenu": "Zatvori meni",
     "home": "Početna",
     "photography": "Fotografija",
     "qa": "QA",
@@ -17,37 +21,75 @@
     "title": "Gradim pouzdane proizvode i pričam svet kroz slike.",
     "lead": "Dobrodošli na moj portfolio: osiguranje kvaliteta, fotografija i mapa znanja koja se stalno razvija.",
     "exploreQa": "Pogledaj moj QA profil",
-    "explorePhotography": "Pogledaj moje fotografije"
+    "explorePhotography": "Pogledaj moje fotografije",
+    "highlightsEyebrow": "Istraži",
+    "highlightsTitle": "Tri strane, isti standard.",
+    "qaTitle": "Osiguranje kvaliteta",
+    "qaBody": "Testiranje, strategija, automatizacija i kvalitet u službi pouzdanih proizvoda.",
+    "qaLink": "Pogledaj moj QA profil",
+    "photographyTitle": "Fotografija",
+    "photographyBody": "Editorijalne i putne fotografije, između prirodnog svetla i kompozicije.",
+    "photographyLink": "Pregledaj galerije",
+    "knowledgeTitle": "Baza znanja",
+    "knowledgeBody": "Mapa uma pojmova, metoda i alata koje stalno istražujem.",
+    "knowledgeLink": "Istraži mapu",
+    "contactEyebrow": "Hajde da radimo zajedno",
+    "contactTitle": "Misija, foto projekat ili pitanje?",
+    "contactBody": "Pričajmo o kvalitetu softvera, fotografiji ili bilo čemu između.",
+    "contactCta": "Kontaktiraj me"
   },
-  "Pages": {
-    "photography": {
-      "title": "Fotografija",
-      "description": "Galerije i albumi — uskoro."
-    },
-    "qa": {
-      "title": "QA",
-      "description": "Predstavljanje, veštine, iskustvo i QA projekti — uskoro."
-    },
-    "knowledge": {
-      "title": "Znanje",
-      "description": "Mapa uma, pojmovi i veze — uskoro."
-    },
-    "about": {
-      "title": "O meni",
-      "description": "Moje iskustvo i pristup — uskoro."
-    },
-    "contact": {
-      "title": "Kontakt",
-      "description": "Kako da me kontaktirate — uskoro."
-    }
+  "Qa": {
+    "eyebrow": "Osiguranje kvaliteta",
+    "title": "Kvalitet, od ručnog testiranja do strategije.",
+    "lead": "Pomažem produktnim timovima da isporuče pouzdan softver: strategija testiranja, automatizacija, kontinuirani kvalitet i svakodnevna kultura kvaliteta.",
+    "experienceEyebrow": "Iskustvo",
+    "experienceTitle": "Radno iskustvo",
+    "skillsEyebrow": "Alati",
+    "skillsTitle": "Veštine",
+    "projectsEyebrow": "Odabrani radovi",
+    "projectsTitle": "Projekti",
+    "ctaTitle": "Potrebna vam je pomoć oko kvaliteta?",
+    "ctaBody": "Pričajmo o vašoj strategiji testiranja, automatizaciji ili izazovima kvaliteta.",
+    "ctaButton": "Kontaktiraj me"
+  },
+  "Photography": {
+    "eyebrow": "Fotografija",
+    "title": "Slike, između prirodnog svetla i kompozicije.",
+    "lead": "Izbor ličnih serija: putovanja, arhitektura i svakodnevne scene. Interaktivne galerije uskoro stižu."
+  },
+  "Knowledge": {
+    "eyebrow": "Znanje",
+    "title": "Mapa pojmova koja raste sa mnom.",
+    "lead": "Beleške, metode i alati koje stalno istražujem. Interaktivna mapa (Mindset Map) stiže u narednom koraku.",
+    "mapNote": "Interaktivna mapa (Mindset Map) uskoro stiže."
+  },
+  "About": {
+    "eyebrow": "O meni",
+    "principlesTitle": "Šta me vodi",
+    "ctaButton": "Kontaktiraj me"
+  },
+  "Contact": {
+    "eyebrow": "Kontakt",
+    "title": "Hajde da popričamo o vašem projektu.",
+    "lead": "QA misija, foto projekat ili jednostavno želja za razgovorom? Pišite mi.",
+    "emailLabel": "Pošaljite mi mejl",
+    "socialsTitle": "Pronađite me",
+    "locationLabel": "Lokacija",
+    "availabilityLabel": "Dostupnost"
   },
   "Theme": {
     "toggle": "Promeni temu"
+  },
+  "NotFound": {
+    "title": "Stranica nije pronađena",
+    "body": "Stranica koju tražite ne postoji ili je premeštena.",
+    "back": "Nazad na početnu"
   },
   "Language": {
     "label": "Promeni jezik"
   },
   "Footer": {
-    "rights": "© 2026 Benfice. Sva prava zadržana."
+    "nav": "Navigacija u podnožju",
+    "rights": "© 2026 Benoît Freulon. Sva prava zadržana."
   }
 }
