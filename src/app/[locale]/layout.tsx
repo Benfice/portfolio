@@ -6,7 +6,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { profile } from "@/content/profile";
+import { getProfile } from "@/lib/sanity/content";
 import { routing } from "@/i18n/routing";
 import { getBaseUrl } from "@/lib/site";
 import "../globals.css";
@@ -49,6 +49,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
+  const profile = await getProfile();
 
   return {
     metadataBase: new URL(getBaseUrl()),
@@ -82,6 +83,7 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "Nav" });
+  const profile = await getProfile();
 
   return (
     <html
@@ -100,11 +102,11 @@ export default async function LocaleLayout({
           >
             {t("skipToContent")}
           </a>
-          <Header />
+          <Header name={profile.name} />
           <main id="main" className="flex flex-1 flex-col">
             {children}
           </main>
-          <Footer />
+          <Footer name={profile.name} socials={profile.socials} />
         </NextIntlClientProvider>
       </body>
     </html>

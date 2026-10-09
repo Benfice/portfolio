@@ -5,8 +5,8 @@ import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { profile } from "@/content/profile";
 import { Link } from "@/i18n/navigation";
+import { getProfile } from "@/lib/sanity/content";
 import { localeAlternates } from "@/lib/metadata";
 import { pickLocalized } from "@/lib/localized";
 
@@ -28,6 +28,7 @@ export default async function HomePage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Home");
+  const profile = await getProfile();
 
   const highlights = [
     {

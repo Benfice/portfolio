@@ -5,8 +5,7 @@ import { ButtonLink } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { about } from "@/content/about";
-import { profile } from "@/content/profile";
+import { getAbout, getProfile } from "@/lib/sanity/content";
 import { pickLocalized, pickLocalizedList } from "@/lib/localized";
 import { localeAlternates } from "@/lib/metadata";
 
@@ -17,6 +16,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "About" });
+  const about = await getAbout();
 
   return {
     title: t("eyebrow"),
@@ -33,6 +33,7 @@ export default async function AboutPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("About");
+  const [about, profile] = await Promise.all([getAbout(), getProfile()]);
 
   return (
     <>

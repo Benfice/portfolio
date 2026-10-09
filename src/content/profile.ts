@@ -23,3 +23,5 @@ export const profile = {
     { label: "LinkedIn", href: "https://www.linkedin.com/in/benoit-freulon" },
   ],
 };
+
+export type Profile = typeof profile;

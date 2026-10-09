@@ -1,13 +1,12 @@
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
-import { profile } from "@/content/profile";
 import { Link } from "@/i18n/navigation";
 import { navItems } from "@/lib/nav";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { MobileNav } from "./MobileNav";
 import { ThemeToggle } from "./ThemeToggle";
 
-export function Header() {
+export function Header({ name }: { name: string }) {
   const t = useTranslations("Nav");
 
   const links = navItems.map((item) => ({
@@ -19,7 +18,7 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-border bg-background/80 backdrop-blur">
       <Container className="flex h-16 items-center justify-between gap-6">
         <Link href="/" className="font-serif text-lg tracking-tight">
-          {profile.name}
+          {name}
         </Link>
 
         <nav aria-label={t("primary")} className="hidden lg:block">

@@ -5,7 +5,7 @@ import { PhotoGallery } from "@/components/PhotoGallery";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { albums } from "@/content/photos";
+import { getAlbums } from "@/lib/sanity/content";
 import { pickLocalized } from "@/lib/localized";
 import { localeAlternates } from "@/lib/metadata";
 
@@ -32,6 +32,7 @@ export default async function PhotographyPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Photography");
+  const albums = await getAlbums();
 
   return (
     <>

@@ -41,3 +41,5 @@ export const about = {
     ],
   } satisfies LocalizedList,
 };
+
+export type About = typeof about;

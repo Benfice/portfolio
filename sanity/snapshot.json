@@ -1,0 +1,3182 @@
+[
+  {
+    "_id": "portfolioProfile",
+    "_type": "profile",
+    "name": "Benoît Freulon",
+    "email": "benfice@proton.me",
+    "role": [
+      {
+        "language": "fr",
+        "value": "QA Lead & Photographe"
+      },
+      {
+        "language": "en",
+        "value": "QA Lead & Photographer"
+      },
+      {
+        "language": "sr",
+        "value": "QA Lead i fotograf"
+      }
+    ],
+    "location": [
+      {
+        "language": "fr",
+        "value": "Novi Sad, Serbie"
+      },
+      {
+        "language": "en",
+        "value": "Novi Sad, Serbia"
+      },
+      {
+        "language": "sr",
+        "value": "Novi Sad, Srbija"
+      }
+    ],
+    "availability": [
+      {
+        "language": "fr",
+        "value": "Ouvert aux missions et collaborations"
+      },
+      {
+        "language": "en",
+        "value": "Open to missions and collaborations"
+      },
+      {
+        "language": "sr",
+        "value": "Otvoren za saradnje i projekte"
+      }
+    ],
+    "socials": [
+      {
+        "_key": "social-0",
+        "label": "GitHub",
+        "href": "https://github.com/Benfice"
+      },
+      {
+        "_key": "social-1",
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/benoit-freulon"
+      }
+    ]
+  },
+  {
+    "_id": "portfolioAbout",
+    "_type": "about",
+    "intro": [
+      {
+        "language": "fr",
+        "value": "QA Lead le jour, photographe dès que la lumière le permet : deux manières de chercher la justesse."
+      },
+      {
+        "language": "en",
+        "value": "QA Lead by day, photographer whenever the light allows: two ways of seeking precision."
+      },
+      {
+        "language": "sr",
+        "value": "QA Lead danju, fotograf kad god svetlo dozvoli: dva načina da se traži preciznost."
+      }
+    ],
+    "paragraphs": [
+      {
+        "_key": "item-0",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Depuis plusieurs années, j'aide les équipes produit à livrer des logiciels auxquels on peut se fier. Mon travail part d'une question simple : qu'est-ce qui pourrait mal tourner, et comment le détecter assez tôt ?"
+          },
+          {
+            "language": "en",
+            "value": "For several years I have helped product teams ship software people can trust. My work starts with a simple question: what could go wrong, and how can we catch it early enough?"
+          },
+          {
+            "language": "sr",
+            "value": "Već nekoliko godina pomažem produktnim timovima da isporuče softver u koji se može verovati. Moj rad počinje jednostavnim pitanjem: šta može poći naopako i kako to otkriti dovoljno rano?"
+          }
+        ]
+      },
+      {
+        "_key": "item-1",
+        "value": [
+          {
+            "language": "fr",
+            "value": "La photographie m'apprend la même patience : observer, composer, attendre le bon moment. Ce portfolio rassemble ces deux facettes et la carte de connaissances qui les relie."
+          },
+          {
+            "language": "en",
+            "value": "Photography teaches me the same patience: observe, compose, wait for the right moment. This portfolio brings those two facets together, along with the knowledge map that connects them."
+          },
+          {
+            "language": "sr",
+            "value": "Fotografija me uči istoj strpljivosti: posmatraj, komponuj, sačekaj pravi trenutak. Ovaj portfolio spaja ta dva aspekta i mapu znanja koja ih povezuje."
+          }
+        ]
+      }
+    ],
+    "principles": [
+      {
+        "_key": "item-0",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Qualité par défaut, pas par obligation"
+          },
+          {
+            "language": "en",
+            "value": "Quality by default, not by obligation"
+          },
+          {
+            "language": "sr",
+            "value": "Kvalitet podrazumevano, ne po obavezi"
+          }
+        ]
+      },
+      {
+        "_key": "item-1",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Automatiser ce qui se répète"
+          },
+          {
+            "language": "en",
+            "value": "Automate what repeats"
+          },
+          {
+            "language": "sr",
+            "value": "Automatizuj ono što se ponavlja"
+          }
+        ]
+      },
+      {
+        "_key": "item-2",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Documenter pour transmettre"
+          },
+          {
+            "language": "en",
+            "value": "Document to pass it on"
+          },
+          {
+            "language": "sr",
+            "value": "Dokumentuj da bi preneo"
+          }
+        ]
+      },
+      {
+        "_key": "item-3",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Regarder avant de juger"
+          },
+          {
+            "language": "en",
+            "value": "Look before judging"
+          },
+          {
+            "language": "sr",
+            "value": "Pogledaj pre nego što prosudiš"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "portfolioTraining",
+    "_type": "training",
+    "providerTitle": "OpenClassrooms · Udemy",
+    "topics": [
+      {
+        "_key": "item-0",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Tests logiciels & QA"
+          },
+          {
+            "language": "en",
+            "value": "Software testing & QA"
+          },
+          {
+            "language": "sr",
+            "value": "Testiranje softvera i QA"
+          }
+        ]
+      },
+      {
+        "_key": "item-1",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Méthodologies agiles"
+          },
+          {
+            "language": "en",
+            "value": "Agile methodologies"
+          },
+          {
+            "language": "sr",
+            "value": "Agile metodologije"
+          }
+        ]
+      },
+      {
+        "_key": "item-2",
+        "value": [
+          {
+            "language": "fr",
+            "value": "JavaScript"
+          },
+          {
+            "language": "en",
+            "value": "JavaScript"
+          },
+          {
+            "language": "sr",
+            "value": "JavaScript"
+          }
+        ]
+      },
+      {
+        "_key": "item-3",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Python"
+          },
+          {
+            "language": "en",
+            "value": "Python"
+          },
+          {
+            "language": "sr",
+            "value": "Python"
+          }
+        ]
+      },
+      {
+        "_key": "item-4",
+        "value": [
+          {
+            "language": "fr",
+            "value": "SQL"
+          },
+          {
+            "language": "en",
+            "value": "SQL"
+          },
+          {
+            "language": "sr",
+            "value": "SQL"
+          }
+        ]
+      },
+      {
+        "_key": "item-5",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Git / GitHub"
+          },
+          {
+            "language": "en",
+            "value": "Git / GitHub"
+          },
+          {
+            "language": "sr",
+            "value": "Git / GitHub"
+          }
+        ]
+      },
+      {
+        "_key": "item-6",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Développement web"
+          },
+          {
+            "language": "en",
+            "value": "Web development"
+          },
+          {
+            "language": "sr",
+            "value": "Web development"
+          }
+        ]
+      },
+      {
+        "_key": "item-7",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Django"
+          },
+          {
+            "language": "en",
+            "value": "Django"
+          },
+          {
+            "language": "sr",
+            "value": "Django"
+          }
+        ]
+      },
+      {
+        "_key": "item-8",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Flutter"
+          },
+          {
+            "language": "en",
+            "value": "Flutter"
+          },
+          {
+            "language": "sr",
+            "value": "Flutter"
+          }
+        ]
+      },
+      {
+        "_key": "item-9",
+        "value": [
+          {
+            "language": "fr",
+            "value": "HTML / CSS"
+          },
+          {
+            "language": "en",
+            "value": "HTML / CSS"
+          },
+          {
+            "language": "sr",
+            "value": "HTML / CSS"
+          }
+        ]
+      },
+      {
+        "_key": "item-10",
+        "value": [
+          {
+            "language": "fr",
+            "value": "IA"
+          },
+          {
+            "language": "en",
+            "value": "AI"
+          },
+          {
+            "language": "sr",
+            "value": "AI"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "experience-0",
+    "_type": "experience",
+    "order": 0,
+    "company": "PLASSIDO",
+    "earlier": false,
+    "role": [
+      {
+        "language": "fr",
+        "value": "QA Engineer → QA Lead"
+      },
+      {
+        "language": "en",
+        "value": "QA Engineer → QA Lead"
+      },
+      {
+        "language": "sr",
+        "value": "QA inženjer → QA Lead"
+      }
+    ],
+    "period": [
+      {
+        "language": "fr",
+        "value": "Janv. 2022 — aujourd'hui"
+      },
+      {
+        "language": "en",
+        "value": "Jan 2022 — Present"
+      },
+      {
+        "language": "sr",
+        "value": "Jan 2022 — danas"
+      }
+    ],
+    "location": [
+      {
+        "language": "fr",
+        "value": "Novi Sad, Serbie"
+      },
+      {
+        "language": "en",
+        "value": "Novi Sad, Serbia"
+      },
+      {
+        "language": "sr",
+        "value": "Novi Sad, Srbija"
+      }
+    ],
+    "summary": [
+      {
+        "language": "fr",
+        "value": "D'abord QA Engineer puis QA Lead : mise en place d'une fonction QA dans un environnement où elle n'existait pas, puis coordination de l'activité QA sur plusieurs projets du groupe Oakland."
+      },
+      {
+        "language": "en",
+        "value": "Started as QA Engineer and progressed to QA Lead: built a QA function where none existed, then coordinated QA across multiple Oakland Group projects."
+      },
+      {
+        "language": "sr",
+        "value": "Počeo kao QA inženjer i napredovao do QA Lida: uspostavio QA funkciju gde ona nije postojala, zatim koordinirao QA aktivnosti na više Oakland Group projekata."
+      }
+    ],
+    "highlights": [
+      {
+        "_key": "highlight-0",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Création d'une démarche QA structurée dans une entreprise sans fonction QA dédiée."
+          },
+          {
+            "language": "en",
+            "value": "Built a structured QA approach in a company where no dedicated QA function existed."
+          },
+          {
+            "language": "sr",
+            "value": "Izgradio strukturisan QA pristup u kompaniji bez posebne QA funkcije."
+          }
+        ]
+      },
+      {
+        "_key": "highlight-1",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Passage d'une prise en charge individuelle à un rôle de QA Lead sur plusieurs projets."
+          },
+          {
+            "language": "en",
+            "value": "Moved from individual QA ownership to a QA Lead role across multiple projects."
+          },
+          {
+            "language": "sr",
+            "value": "Prešao sa individualnog vlasništva nad kvalitetom na QA Lead ulogu na više projekata."
+          }
+        ]
+      },
+      {
+        "_key": "highlight-2",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Croissance de l'organisation QA jusqu'à 6 membres : 1 QA Lead et 5 QA Engineers."
+          },
+          {
+            "language": "en",
+            "value": "Helped grow the QA organisation to 6 members: 1 QA Lead and 5 QA Engineers."
+          },
+          {
+            "language": "sr",
+            "value": "Podržao rast QA organizacije na 6 članova: 1 QA Lead i 5 QA inženjera."
+          }
+        ]
+      },
+      {
+        "_key": "highlight-3",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Mentorat des QA Engineers vers l'autonomie, avec supervision et responsabilité finale."
+          },
+          {
+            "language": "en",
+            "value": "Trained and mentored QA engineers toward autonomous ownership while keeping lead oversight."
+          },
+          {
+            "language": "sr",
+            "value": "Obuka i mentorstvo QA inženjera ka samostalnom vlasništvu, uz zadržavanje nadzora."
+          }
+        ]
+      },
+      {
+        "_key": "highlight-4",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Mise en place de pratiques homogènes : exigences, critères d'acceptation, cas de test, anomalies et suivi QA."
+          },
+          {
+            "language": "en",
+            "value": "Established consistent practices around requirements, acceptance criteria, test cases, defect reporting and QA follow-up."
+          },
+          {
+            "language": "sr",
+            "value": "Uspostavio dosledne prakse: zahtevi, kriterijumi prihvatanja, test slučajevi, prijava grešaka i QA praćenje."
+          }
+        ]
+      },
+      {
+        "_key": "highlight-5",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Reporting qualité régulier et mises à jour basées sur des KPI auprès des parties prenantes d'Oakland."
+          },
+          {
+            "language": "en",
+            "value": "Provided regular quality reporting and KPI-based updates to Oakland stakeholders."
+          },
+          {
+            "language": "sr",
+            "value": "Redovno izveštavanje o kvalitetu i KPI ažuriranja za Oakland interesne strane."
+          }
+        ]
+      },
+      {
+        "_key": "highlight-6",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Intervention sur des projets allant de la maintenance en production à des plateformes d'intégration complexes et des projets en démarrage."
+          },
+          {
+            "language": "en",
+            "value": "Worked on projects ranging from production maintenance to complex integration platforms and early development."
+          },
+          {
+            "language": "sr",
+            "value": "Radio na projektima od održavanja produkcije do složenih integracionih platformi i ranog razvoja."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "experience-1",
+    "_type": "experience",
+    "order": 1,
+    "company": "MEDIA PRESS",
+    "earlier": false,
+    "role": [
+      {
+        "language": "fr",
+        "value": "Rédacteur français"
+      },
+      {
+        "language": "en",
+        "value": "French Redactor"
+      },
+      {
+        "language": "sr",
+        "value": "Francuski redaktor"
+      }
+    ],
+    "period": [
+      {
+        "language": "fr",
+        "value": "Janv. 2021 — Janv. 2022"
+      },
+      {
+        "language": "en",
+        "value": "Jan 2021 — Jan 2022"
+      },
+      {
+        "language": "sr",
+        "value": "Jan 2021 — Jan 2022"
+      }
+    ],
+    "location": [
+      {
+        "language": "fr",
+        "value": "Novi Sad, Serbie"
+      },
+      {
+        "language": "en",
+        "value": "Novi Sad, Serbia"
+      },
+      {
+        "language": "sr",
+        "value": "Novi Sad, Srbija"
+      }
+    ],
+    "summary": [
+      {
+        "language": "fr",
+        "value": "Rédaction de synopsis en français pour des films, séries, documentaires et émissions, ainsi que la préparation des maquettes d'un magazine TV."
+      },
+      {
+        "language": "en",
+        "value": "Wrote French synopses for movies, series, documentaries and TV shows, and prepared TV programme magazine layouts."
+      },
+      {
+        "language": "sr",
+        "value": "Pisanje francuskih sinopsisa za filmove, serije, dokumentarce i TV emisije, kao i priprema rasporeda TV programa časopisa."
+      }
+    ],
+    "highlights": [
+      {
+        "_key": "highlight-0",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Synopsis rédigés sous contraintes strictes de longueur et de délais."
+          },
+          {
+            "language": "en",
+            "value": "Wrote synopses under strict character-count and deadline constraints."
+          },
+          {
+            "language": "sr",
+            "value": "Sinopsisi pisani pod strogim ograničenjima dužine teksta i rokova."
+          }
+        ]
+      },
+      {
+        "_key": "highlight-1",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Coordination et gestion d'une équipe de 5 à 10 personnes."
+          },
+          {
+            "language": "en",
+            "value": "Coordinated and managed a team of 5 to 10 people."
+          },
+          {
+            "language": "sr",
+            "value": "Koordinacija i upravljanje timom od 5 do 10 osoba."
+          }
+        ]
+      },
+      {
+        "_key": "highlight-2",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Environnement : Adobe InDesign, logiciel interne de métadonnées."
+          },
+          {
+            "language": "en",
+            "value": "Environment: Adobe InDesign, internal metadata software."
+          },
+          {
+            "language": "sr",
+            "value": "Okruženje: Adobe InDesign, interni softver za metapodatke."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "experience-2",
+    "_type": "experience",
+    "order": 2,
+    "company": "SYNECHRON",
+    "earlier": false,
+    "role": [
+      {
+        "language": "fr",
+        "value": "QA Engineer"
+      },
+      {
+        "language": "en",
+        "value": "QA Engineer"
+      },
+      {
+        "language": "sr",
+        "value": "QA inženjer"
+      }
+    ],
+    "period": [
+      {
+        "language": "fr",
+        "value": "Août 2019 — Sept. 2020"
+      },
+      {
+        "language": "en",
+        "value": "Aug 2019 — Sep 2020"
+      },
+      {
+        "language": "sr",
+        "value": "Avg 2019 — Sep 2020"
+      }
+    ],
+    "location": [
+      {
+        "language": "fr",
+        "value": "Novi Sad, Serbie"
+      },
+      {
+        "language": "en",
+        "value": "Novi Sad, Serbia"
+      },
+      {
+        "language": "sr",
+        "value": "Novi Sad, Srbija"
+      }
+    ],
+    "summary": [
+      {
+        "language": "fr",
+        "value": "QA sur Pacifica, application d'assurance à grande échelle (assurance de flottes de véhicules) pour Crédit Agricole, au sein d'une équipe de 5 QA sous la responsabilité d'un QA Lead."
+      },
+      {
+        "language": "en",
+        "value": "QA on Pacifica, a large-scale vehicle fleet insurance application for Crédit Agricole, as part of a team of 5 QA engineers under a QA Lead."
+      },
+      {
+        "language": "sr",
+        "value": "QA na Pacifica, aplikaciji za osiguranje auto flota velikih razmera za Crédit Agricole, u timu od 5 QA inženjera pod QA Lideom."
+      }
+    ],
+    "highlights": [
+      {
+        "_key": "highlight-0",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Traduction des spécifications fonctionnelles et des user stories du français vers l'anglais pour l'équipe de développement serbe."
+          },
+          {
+            "language": "en",
+            "value": "Translated functional specifications, user stories and requirements from French to English for the Serbian development team."
+          },
+          {
+            "language": "sr",
+            "value": "Prevod funkcionalnih specifikacija i user stories sa francuskog na engleski za srpski razvojni tim."
+          }
+        ]
+      },
+      {
+        "_key": "highlight-1",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Interface de communication entre les Business Analysts francophones et les développeurs serbes."
+          },
+          {
+            "language": "en",
+            "value": "Acted as a communication bridge between French-speaking Business Analysts and Serbian developers."
+          },
+          {
+            "language": "sr",
+            "value": "Komunikaciona veza između francuskih Business Analysta i srpskih developera."
+          }
+        ]
+      },
+      {
+        "_key": "highlight-2",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Clarification des exigences et définition des critères d'acceptation avec les Business Analysts."
+          },
+          {
+            "language": "en",
+            "value": "Clarified requirements and defined acceptance criteria with the Business Analysts."
+          },
+          {
+            "language": "sr",
+            "value": "Razjašnjavanje zahteva i definisanje kriterijuma prihvatanja sa Business Analystima."
+          }
+        ]
+      },
+      {
+        "_key": "highlight-3",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Conception et maintenance des cas de test dans TestRail ; tests manuels UI, fonctionnels et de régression."
+          },
+          {
+            "language": "en",
+            "value": "Designed and maintained test cases in TestRail; extensive manual UI, functional and regression testing."
+          },
+          {
+            "language": "sr",
+            "value": "Kreiranje i održavanje test slučajeva u TestRail-u; opsežno ručno UI, funkcionalno i regresiono testiranje."
+          }
+        ]
+      },
+      {
+        "_key": "highlight-4",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Contrôles et manipulations SQL ciblées pour la préparation des tests et les investigations."
+          },
+          {
+            "language": "en",
+            "value": "Performed targeted SQL checks and data modifications for test preparation and investigations."
+          },
+          {
+            "language": "sr",
+            "value": "Ciljane SQL provere i izmene podataka za pripremu testova i istrage."
+          }
+        ]
+      },
+      {
+        "_key": "highlight-5",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Suivi des anomalies dans Jira, cérémonies Agile et démonstrations client en fin de sprint."
+          },
+          {
+            "language": "en",
+            "value": "Reported and tracked defects in Jira, and joined Agile ceremonies and end-of-sprint client demos."
+          },
+          {
+            "language": "sr",
+            "value": "Prijava i praćenje defekata u Jira-u, Agile ceremonije i predstavljanja klijentu na kraju sprinta."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "experience-3",
+    "_type": "experience",
+    "order": 3,
+    "company": "Centre Jules Verne",
+    "earlier": true,
+    "role": [
+      {
+        "language": "fr",
+        "value": "Enseignant — Français langue étrangère"
+      },
+      {
+        "language": "en",
+        "value": "Teacher — French as a Foreign Language"
+      },
+      {
+        "language": "sr",
+        "value": "Nastavnik — Francuski kao strani jezik"
+      }
+    ],
+    "period": [
+      {
+        "language": "fr",
+        "value": "Juil. 2018 — Juil. 2019"
+      },
+      {
+        "language": "en",
+        "value": "Jul 2018 — Jul 2019"
+      },
+      {
+        "language": "sr",
+        "value": "Jul 2018 — Jul 2019"
+      }
+    ],
+    "location": [
+      {
+        "language": "fr",
+        "value": "Novi Sad, Serbie"
+      },
+      {
+        "language": "en",
+        "value": "Novi Sad, Serbia"
+      },
+      {
+        "language": "sr",
+        "value": "Novi Sad, Srbija"
+      }
+    ],
+    "summary": [
+      {
+        "language": "fr",
+        "value": "Organisation d'activités en français pour des enfants de maternelle et cours de français pour adolescents et jeunes adultes."
+      },
+      {
+        "language": "en",
+        "value": "Organized French-language activities for kindergarten children and taught French to teenagers and young adults."
+      },
+      {
+        "language": "sr",
+        "value": "Organizacija aktivnosti na francuskom za decu u vrtiću i predavanje francuskog tinejdžerima i mladima."
+      }
+    ],
+    "highlights": [
+      {
+        "_key": "highlight-0",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Activités ludiques et pédagogiques en français pour la maternelle."
+          },
+          {
+            "language": "en",
+            "value": "Fun, educational French activities for kindergarten children."
+          },
+          {
+            "language": "sr",
+            "value": "Zabavne i pedagoške aktivnosti na francuskom za vrtić."
+          }
+        ]
+      },
+      {
+        "_key": "highlight-1",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Cours de français pour adolescents et jeunes adultes."
+          },
+          {
+            "language": "en",
+            "value": "French classes for teenagers and young adults."
+          },
+          {
+            "language": "sr",
+            "value": "Časovi francuskog za tinejdžere i mlade."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "experience-4",
+    "_type": "experience",
+    "order": 4,
+    "company": "Photographe indépendant",
+    "earlier": true,
+    "role": [
+      {
+        "language": "fr",
+        "value": "Photographe"
+      },
+      {
+        "language": "en",
+        "value": "Photographer"
+      },
+      {
+        "language": "sr",
+        "value": "Fotograf"
+      }
+    ],
+    "period": [
+      {
+        "language": "fr",
+        "value": "Janv. 2017 — Juil. 2018"
+      },
+      {
+        "language": "en",
+        "value": "Jan 2017 — Jul 2018"
+      },
+      {
+        "language": "sr",
+        "value": "Jan 2017 — Jul 2018"
+      }
+    ],
+    "location": [
+      {
+        "language": "fr",
+        "value": "France"
+      },
+      {
+        "language": "en",
+        "value": "France"
+      },
+      {
+        "language": "sr",
+        "value": "Francuska"
+      }
+    ],
+    "summary": [
+      {
+        "language": "fr",
+        "value": "Photographe indépendant : reportages d'événements pour des entreprises et des particuliers."
+      },
+      {
+        "language": "en",
+        "value": "Freelance photographer: event photography for companies and individuals."
+      },
+      {
+        "language": "sr",
+        "value": "Samostalni fotograf: reportaže događaja za kompanije i pojedince."
+      }
+    ],
+    "highlights": [
+      {
+        "_key": "highlight-0",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Reportages d'événements (entreprises, particuliers)."
+          },
+          {
+            "language": "en",
+            "value": "Event photography (companies, individuals)."
+          },
+          {
+            "language": "sr",
+            "value": "Reportaže događaja (kompanije, pojedinci)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "experience-5",
+    "_type": "experience",
+    "order": 5,
+    "company": "Soleil Pressé",
+    "earlier": true,
+    "role": [
+      {
+        "language": "fr",
+        "value": "Co-gérant"
+      },
+      {
+        "language": "en",
+        "value": "Co-Manager"
+      },
+      {
+        "language": "sr",
+        "value": "Suupravitelj"
+      }
+    ],
+    "period": [
+      {
+        "language": "fr",
+        "value": "Sept. 2015 — Déc. 2016"
+      },
+      {
+        "language": "en",
+        "value": "Sep 2015 — Dec 2016"
+      },
+      {
+        "language": "sr",
+        "value": "Sep 2015 — Dec 2016"
+      }
+    ],
+    "location": [
+      {
+        "language": "fr",
+        "value": "Marseille, France"
+      },
+      {
+        "language": "en",
+        "value": "Marseille, France"
+      },
+      {
+        "language": "sr",
+        "value": "Marselj, Francuska"
+      }
+    ],
+    "summary": [
+      {
+        "language": "fr",
+        "value": "Co-gérant d'un restaurant healthy en libre-service : préparation des plats, service client, coordination d'équipe et gestion opérationnelle."
+      },
+      {
+        "language": "en",
+        "value": "Co-managed the daily operations of a healthy fast-casual restaurant: food preparation, customer service, team coordination and operational management."
+      },
+      {
+        "language": "sr",
+        "value": "Suupravitelj zdravog restorana brze ishrane: priprema hrane, korisnički servis, koordinacija tima i operativno upravljanje."
+      }
+    ],
+    "highlights": [
+      {
+        "_key": "highlight-0",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Préparation de salades, soupes, jus frais et desserts maison."
+          },
+          {
+            "language": "en",
+            "value": "Prepared homemade salads, soups, fresh juices and desserts."
+          },
+          {
+            "language": "sr",
+            "value": "Priprema domaćih salata, supa, svežih sokova i dezerta."
+          }
+        ]
+      },
+      {
+        "_key": "highlight-1",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Coordination d'équipe et gestion opérationnelle quotidienne."
+          },
+          {
+            "language": "en",
+            "value": "Team coordination and day-to-day operational management."
+          },
+          {
+            "language": "sr",
+            "value": "Koordinacija tima i svakodnevno operativno upravljanje."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "experience-6",
+    "_type": "experience",
+    "order": 6,
+    "company": "Maison de Sagesse — ONG",
+    "earlier": true,
+    "role": [
+      {
+        "language": "fr",
+        "value": "Responsable communication / projets"
+      },
+      {
+        "language": "en",
+        "value": "Communication / Projects Manager"
+      },
+      {
+        "language": "sr",
+        "value": "Menadžer komunikacije / projekata"
+      }
+    ],
+    "period": [
+      {
+        "language": "fr",
+        "value": "Déc. 2012 — Déc. 2014"
+      },
+      {
+        "language": "en",
+        "value": "Dec 2012 — Dec 2014"
+      },
+      {
+        "language": "sr",
+        "value": "Dec 2012 — Dec 2014"
+      }
+    ],
+    "location": [
+      {
+        "language": "fr",
+        "value": "Étampes, France"
+      },
+      {
+        "language": "en",
+        "value": "Étampes, France"
+      },
+      {
+        "language": "sr",
+        "value": "Etamp, Francuska"
+      }
+    ],
+    "summary": [
+      {
+        "language": "fr",
+        "value": "Gestion de la communication interne et externe et coordination de projets locaux d'aide aux enfants dans le besoin."
+      },
+      {
+        "language": "en",
+        "value": "Managed internal and external communication and coordinated local projects supporting children in need."
+      },
+      {
+        "language": "sr",
+        "value": "Upravljanje internom i eksternom komunikacijom i koordinacija lokalnih projekata podrške deci u potrebi."
+      }
+    ],
+    "highlights": [
+      {
+        "_key": "highlight-0",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Communication interne et externe."
+          },
+          {
+            "language": "en",
+            "value": "Internal and external communication."
+          },
+          {
+            "language": "sr",
+            "value": "Interna i eksterna komunikacija."
+          }
+        ]
+      },
+      {
+        "_key": "highlight-1",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Organisation de l'Assemblée générale."
+          },
+          {
+            "language": "en",
+            "value": "Organized the General Assembly."
+          },
+          {
+            "language": "sr",
+            "value": "Organizacija Generalne skupštine."
+          }
+        ]
+      },
+      {
+        "_key": "highlight-2",
+        "text": [
+          {
+            "language": "fr",
+            "value": "Coordination de projets locaux d'aide à l'enfance."
+          },
+          {
+            "language": "en",
+            "value": "Coordinated local projects supporting children."
+          },
+          {
+            "language": "sr",
+            "value": "Koordinacija lokalnih projekata podrške deci."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "project-0",
+    "_type": "project",
+    "order": 0,
+    "name": "Bulldozer",
+    "client": "Retail Ecommerce Ventures",
+    "role": [
+      {
+        "language": "fr",
+        "value": "QA Engineer → QA Lead"
+      },
+      {
+        "language": "en",
+        "value": "QA Engineer → QA Lead"
+      },
+      {
+        "language": "sr",
+        "value": "QA inženjer → QA Lead"
+      }
+    ],
+    "description": [
+      {
+        "language": "fr",
+        "value": "Plateforme B2B de communication et CRM : messagerie, gestion des contacts, tâches, appels, calendrier et collaboration. Intégré dès le tout début du développement ; le produit n'est pas allé en production."
+      },
+      {
+        "language": "en",
+        "value": "B2B communication and CRM platform combining messaging, contact management, task management, calls, calendar and collaboration. Joined at the very start of development; the product never reached production."
+      },
+      {
+        "language": "sr",
+        "value": "B2B platforma za komunikaciju i CRM: poruke, upravljanje kontaktima, zadaci, pozivi, kalendar i saradnja. Uključen od samog početka razvoja; proizvod nikada nije ušao u produkciju."
+      }
+    ],
+    "environment": [
+      "Applications mobiles",
+      "Application web",
+      "Jira",
+      "Confluence",
+      "Zephyr Scale",
+      "Android Studio"
+    ]
+  },
+  {
+    "_id": "project-1",
+    "_type": "project",
+    "order": 1,
+    "name": "Workforce Timesheet Processing",
+    "client": "Oakland Group",
+    "role": [
+      {
+        "language": "fr",
+        "value": "QA Engineer → QA Lead"
+      },
+      {
+        "language": "en",
+        "value": "QA Engineer → QA Lead"
+      },
+      {
+        "language": "sr",
+        "value": "QA inženjer → QA Lead"
+      }
+    ],
+    "description": [
+      {
+        "language": "fr",
+        "value": "Plateforme en production qui automatise la collecte, la transformation, la validation et l'intégration des données de temps de travail des travailleurs depuis plusieurs sources et formats propres à chaque client."
+      },
+      {
+        "language": "en",
+        "value": "Production platform automating the collection, transformation, validation and integration of worker timesheet data from multiple sources and client-specific formats."
+      },
+      {
+        "language": "sr",
+        "value": "Produkciona platforma koja automatizuje prikupljanje, transformaciju, validaciju i integraciju podataka o radnom vremenu radnika iz više izvora i klijentskih formata."
+      }
+    ],
+    "environment": [
+      "Dataviz",
+      "SQL",
+      "Workflows e-mail",
+      "Jira",
+      "Confluence",
+      "Zephyr Scale"
+    ]
+  },
+  {
+    "_id": "project-2",
+    "_type": "project",
+    "order": 2,
+    "name": "Workforce Management & Integration",
+    "client": "Oakland Group",
+    "role": [
+      {
+        "language": "fr",
+        "value": "QA Engineer → QA Lead"
+      },
+      {
+        "language": "en",
+        "value": "QA Engineer → QA Lead"
+      },
+      {
+        "language": "sr",
+        "value": "QA inženjer → QA Lead"
+      }
+    ],
+    "description": [
+      {
+        "language": "fr",
+        "value": "Plateforme de gestion et d'intégration des effectifs reliant les systèmes de Randstad, les plateformes de planification clientes et les applications destinées aux travailleurs."
+      },
+      {
+        "language": "en",
+        "value": "Workforce management and integration platform connecting Randstad systems, client planning platforms and worker-facing applications."
+      },
+      {
+        "language": "sr",
+        "value": "Platforma za upravljanje radnom snagom i integraciju koja povezuje Randstad sisteme, klijentske platforme za planiranje i aplikacije za radnike."
+      }
+    ],
+    "environment": [
+      "Postman",
+      "REST APIs",
+      "SQL",
+      "DBeaver",
+      "Grafana",
+      "RabbitMQ",
+      "Planday",
+      "Osmose"
+    ]
+  },
+  {
+    "_id": "project-3",
+    "_type": "project",
+    "order": 3,
+    "name": "Local Domain Services / LDS Digital Hub",
+    "client": "Oakland Group",
+    "role": [
+      {
+        "language": "fr",
+        "value": "QA Lead"
+      },
+      {
+        "language": "en",
+        "value": "QA Lead"
+      },
+      {
+        "language": "sr",
+        "value": "QA Lead"
+      }
+    ],
+    "description": [
+      {
+        "language": "fr",
+        "value": "Plateforme d'intégration d'entreprise conçue pour normaliser et exposer les données métier entre les systèmes locaux de Randstad France et des plateformes externes via des API et des intégrations événementielles."
+      },
+      {
+        "language": "en",
+        "value": "Enterprise integration platform designed to standardize and expose business data between Randstad France's local systems and external platforms through APIs and event-driven integrations."
+      },
+      {
+        "language": "sr",
+        "value": "Enterprise integraciona platforma dizajnirana da standardizuje i izloži poslovne podatke između lokalnih sistema Randstad France i eksternih platformi kroz API-je i event-driven integracije."
+      }
+    ],
+    "environment": [
+      "REST APIs",
+      "Postman",
+      "SQL",
+      "Redis",
+      "RabbitMQ",
+      "Logs applicatifs"
+    ]
+  },
+  {
+    "_id": "project-4",
+    "_type": "project",
+    "order": 4,
+    "name": "Stalks",
+    "client": "Oakland Group",
+    "role": [
+      {
+        "language": "fr",
+        "value": "QA Engineer"
+      },
+      {
+        "language": "en",
+        "value": "QA Engineer"
+      },
+      {
+        "language": "sr",
+        "value": "QA inženjer"
+      }
+    ],
+    "description": [
+      {
+        "language": "fr",
+        "value": "Plateforme en production de validation, d'enrichissement et de synchronisation des données de contact des alumni avec des CRM externes, utilisée par l'enseignement supérieur et les associations d'anciens élèves."
+      },
+      {
+        "language": "en",
+        "value": "Production platform for validating, enriching and synchronizing alumni contact data with external CRM systems, used by higher education and alumni organizations."
+      },
+      {
+        "language": "sr",
+        "value": "Produkciona platforma za validaciju, obogaćivanje i sinhronizaciju kontakt podataka alumni-ja sa eksternim CRM sistemima, koju koriste visokoškolstvo i alumni organizacije."
+      }
+    ],
+    "environment": [
+      "Web UI",
+      "Back Office",
+      "Jira",
+      "Confluence",
+      "Zephyr Scale"
+    ]
+  },
+  {
+    "_id": "project-5",
+    "_type": "project",
+    "order": 5,
+    "name": "Keeper in Motion (KIM)",
+    "client": "Oakland Group",
+    "role": [
+      {
+        "language": "fr",
+        "value": "QA Engineer"
+      },
+      {
+        "language": "en",
+        "value": "QA Engineer"
+      },
+      {
+        "language": "sr",
+        "value": "QA inženjer"
+      }
+    ],
+    "description": [
+      {
+        "language": "fr",
+        "value": "Plateforme d'analyse de performance et de coaching pour gardiens de but, entraîneurs, clubs et académies : enregistrement de matchs, statistiques, coaching et administration."
+      },
+      {
+        "language": "en",
+        "value": "Performance analytics and coaching platform for football goalkeepers, coaches, clubs and academies: match recording, statistics, coaching and administration."
+      },
+      {
+        "language": "sr",
+        "value": "Platforma za analizu performansi i trening za golmane, trenere, klubove i akademije: snimanje utakmica, statistika, treniranje i administracija."
+      }
+    ],
+    "environment": [
+      "Desktop",
+      "Tablet",
+      "Web UI",
+      "Back Office",
+      "Jira",
+      "Confluence"
+    ]
+  },
+  {
+    "_id": "skillGroup-0",
+    "_type": "skillGroup",
+    "order": 0,
+    "title": [
+      {
+        "language": "fr",
+        "value": "Assurance qualité"
+      },
+      {
+        "language": "en",
+        "value": "Quality assurance"
+      },
+      {
+        "language": "sr",
+        "value": "Osiguranje kvaliteta"
+      }
+    ],
+    "items": [
+      {
+        "_key": "item-0",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Tests fonctionnels"
+          },
+          {
+            "language": "en",
+            "value": "Functional testing"
+          },
+          {
+            "language": "sr",
+            "value": "Funkcionalno testiranje"
+          }
+        ]
+      },
+      {
+        "_key": "item-1",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Régression / Non-régression"
+          },
+          {
+            "language": "en",
+            "value": "Regression / Non-regression testing"
+          },
+          {
+            "language": "sr",
+            "value": "Regresiono / Neregresiono testiranje"
+          }
+        ]
+      },
+      {
+        "_key": "item-2",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Smoke tests"
+          },
+          {
+            "language": "en",
+            "value": "Smoke testing"
+          },
+          {
+            "language": "sr",
+            "value": "Smoke testovi"
+          }
+        ]
+      },
+      {
+        "_key": "item-3",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Tests exploratoires"
+          },
+          {
+            "language": "en",
+            "value": "Exploratory testing"
+          },
+          {
+            "language": "sr",
+            "value": "Eksploratorno testiranje"
+          }
+        ]
+      },
+      {
+        "_key": "item-4",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Tests UI"
+          },
+          {
+            "language": "en",
+            "value": "UI testing"
+          },
+          {
+            "language": "sr",
+            "value": "UI testiranje"
+          }
+        ]
+      },
+      {
+        "_key": "item-5",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Tests API"
+          },
+          {
+            "language": "en",
+            "value": "API testing"
+          },
+          {
+            "language": "sr",
+            "value": "API testiranje"
+          }
+        ]
+      },
+      {
+        "_key": "item-6",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Tests d'intégration"
+          },
+          {
+            "language": "en",
+            "value": "Integration testing"
+          },
+          {
+            "language": "sr",
+            "value": "Integraciono testiranje"
+          }
+        ]
+      },
+      {
+        "_key": "item-7",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Validation de données"
+          },
+          {
+            "language": "en",
+            "value": "Data validation"
+          },
+          {
+            "language": "sr",
+            "value": "Validacija podataka"
+          }
+        ]
+      },
+      {
+        "_key": "item-8",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Conception & exécution de tests"
+          },
+          {
+            "language": "en",
+            "value": "Test design & execution"
+          },
+          {
+            "language": "sr",
+            "value": "Dizajn i izvršavanje testova"
+          }
+        ]
+      },
+      {
+        "_key": "item-9",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Critères d'acceptation"
+          },
+          {
+            "language": "en",
+            "value": "Acceptance criteria"
+          },
+          {
+            "language": "sr",
+            "value": "Kriterijumi prihvatanja"
+          }
+        ]
+      },
+      {
+        "_key": "item-10",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Gestion des anomalies"
+          },
+          {
+            "language": "en",
+            "value": "Defect management"
+          },
+          {
+            "language": "sr",
+            "value": "Upravljanje defektima"
+          }
+        ]
+      },
+      {
+        "_key": "item-11",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Risques & amélioration de la qualité"
+          },
+          {
+            "language": "en",
+            "value": "Risk identification & quality improvement"
+          },
+          {
+            "language": "sr",
+            "value": "Identifikacija rizika i poboljšanje kvaliteta"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "skillGroup-1",
+    "_type": "skillGroup",
+    "order": 1,
+    "title": [
+      {
+        "language": "fr",
+        "value": "Gestion QA & processus"
+      },
+      {
+        "language": "en",
+        "value": "QA management & processes"
+      },
+      {
+        "language": "sr",
+        "value": "QA upravljanje i procesi"
+      }
+    ],
+    "items": [
+      {
+        "_key": "item-0",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Définition & amélioration des processus QA"
+          },
+          {
+            "language": "en",
+            "value": "QA process definition & improvement"
+          },
+          {
+            "language": "sr",
+            "value": "Definisanje i unapređenje QA procesa"
+          }
+        ]
+      },
+      {
+        "_key": "item-1",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Planification des tests"
+          },
+          {
+            "language": "en",
+            "value": "Test planning"
+          },
+          {
+            "language": "sr",
+            "value": "Planiranje testova"
+          }
+        ]
+      },
+      {
+        "_key": "item-2",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Analyse des exigences"
+          },
+          {
+            "language": "en",
+            "value": "Requirements analysis"
+          },
+          {
+            "language": "sr",
+            "value": "Analiza zahteva"
+          }
+        ]
+      },
+      {
+        "_key": "item-3",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Gestion des cas de test"
+          },
+          {
+            "language": "en",
+            "value": "Test case management"
+          },
+          {
+            "language": "sr",
+            "value": "Upravljanje test slučajevima"
+          }
+        ]
+      },
+      {
+        "_key": "item-4",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Coordination d'équipe QA"
+          },
+          {
+            "language": "en",
+            "value": "QA team coordination"
+          },
+          {
+            "language": "sr",
+            "value": "Koordinacija QA tima"
+          }
+        ]
+      },
+      {
+        "_key": "item-5",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Transfert de connaissances & mentorat"
+          },
+          {
+            "language": "en",
+            "value": "Knowledge transfer & mentoring"
+          },
+          {
+            "language": "sr",
+            "value": "Transfer znanja i mentorstvo"
+          }
+        ]
+      },
+      {
+        "_key": "item-6",
+        "value": [
+          {
+            "language": "fr",
+            "value": "KPI / Reporting qualité"
+          },
+          {
+            "language": "en",
+            "value": "KPI / Quality reporting"
+          },
+          {
+            "language": "sr",
+            "value": "KPI / Izveštavanje o kvalitetu"
+          }
+        ]
+      },
+      {
+        "_key": "item-7",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Communication avec les parties prenantes"
+          },
+          {
+            "language": "en",
+            "value": "Stakeholder communication"
+          },
+          {
+            "language": "sr",
+            "value": "Komunikacija sa interesnim stranama"
+          }
+        ]
+      },
+      {
+        "_key": "item-8",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Scrum / Kanban"
+          },
+          {
+            "language": "en",
+            "value": "Scrum / Kanban"
+          },
+          {
+            "language": "sr",
+            "value": "Scrum / Kanban"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "skillGroup-2",
+    "_type": "skillGroup",
+    "order": 2,
+    "title": [
+      {
+        "language": "fr",
+        "value": "Outils & technologies"
+      },
+      {
+        "language": "en",
+        "value": "Tools & technologies"
+      },
+      {
+        "language": "sr",
+        "value": "Alati i tehnologije"
+      }
+    ],
+    "items": [
+      {
+        "_key": "item-0",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Jira"
+          },
+          {
+            "language": "en",
+            "value": "Jira"
+          },
+          {
+            "language": "sr",
+            "value": "Jira"
+          }
+        ]
+      },
+      {
+        "_key": "item-1",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Confluence"
+          },
+          {
+            "language": "en",
+            "value": "Confluence"
+          },
+          {
+            "language": "sr",
+            "value": "Confluence"
+          }
+        ]
+      },
+      {
+        "_key": "item-2",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Zephyr Scale"
+          },
+          {
+            "language": "en",
+            "value": "Zephyr Scale"
+          },
+          {
+            "language": "sr",
+            "value": "Zephyr Scale"
+          }
+        ]
+      },
+      {
+        "_key": "item-3",
+        "value": [
+          {
+            "language": "fr",
+            "value": "TestRail"
+          },
+          {
+            "language": "en",
+            "value": "TestRail"
+          },
+          {
+            "language": "sr",
+            "value": "TestRail"
+          }
+        ]
+      },
+      {
+        "_key": "item-4",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Postman"
+          },
+          {
+            "language": "en",
+            "value": "Postman"
+          },
+          {
+            "language": "sr",
+            "value": "Postman"
+          }
+        ]
+      },
+      {
+        "_key": "item-5",
+        "value": [
+          {
+            "language": "fr",
+            "value": "SQL / MySQL"
+          },
+          {
+            "language": "en",
+            "value": "SQL / MySQL"
+          },
+          {
+            "language": "sr",
+            "value": "SQL / MySQL"
+          }
+        ]
+      },
+      {
+        "_key": "item-6",
+        "value": [
+          {
+            "language": "fr",
+            "value": "DBeaver"
+          },
+          {
+            "language": "en",
+            "value": "DBeaver"
+          },
+          {
+            "language": "sr",
+            "value": "DBeaver"
+          }
+        ]
+      },
+      {
+        "_key": "item-7",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Logs applicatifs"
+          },
+          {
+            "language": "en",
+            "value": "Application logs"
+          },
+          {
+            "language": "sr",
+            "value": "Aplikativni logovi"
+          }
+        ]
+      },
+      {
+        "_key": "item-8",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Grafana"
+          },
+          {
+            "language": "en",
+            "value": "Grafana"
+          },
+          {
+            "language": "sr",
+            "value": "Grafana"
+          }
+        ]
+      },
+      {
+        "_key": "item-9",
+        "value": [
+          {
+            "language": "fr",
+            "value": "RabbitMQ"
+          },
+          {
+            "language": "en",
+            "value": "RabbitMQ"
+          },
+          {
+            "language": "sr",
+            "value": "RabbitMQ"
+          }
+        ]
+      },
+      {
+        "_key": "item-10",
+        "value": [
+          {
+            "language": "fr",
+            "value": "REST APIs"
+          },
+          {
+            "language": "en",
+            "value": "REST APIs"
+          },
+          {
+            "language": "sr",
+            "value": "REST APIs"
+          }
+        ]
+      },
+      {
+        "_key": "item-11",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Git"
+          },
+          {
+            "language": "en",
+            "value": "Git"
+          },
+          {
+            "language": "sr",
+            "value": "Git"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "skillGroup-3",
+    "_type": "skillGroup",
+    "order": 3,
+    "title": [
+      {
+        "language": "fr",
+        "value": "Connaissances techniques"
+      },
+      {
+        "language": "en",
+        "value": "Technical knowledge"
+      },
+      {
+        "language": "sr",
+        "value": "Tehničko znanje"
+      }
+    ],
+    "items": [
+      {
+        "_key": "item-0",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Python"
+          },
+          {
+            "language": "en",
+            "value": "Python"
+          },
+          {
+            "language": "sr",
+            "value": "Python"
+          }
+        ]
+      },
+      {
+        "_key": "item-1",
+        "value": [
+          {
+            "language": "fr",
+            "value": "JavaScript"
+          },
+          {
+            "language": "en",
+            "value": "JavaScript"
+          },
+          {
+            "language": "sr",
+            "value": "JavaScript"
+          }
+        ]
+      },
+      {
+        "_key": "item-2",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Dart"
+          },
+          {
+            "language": "en",
+            "value": "Dart"
+          },
+          {
+            "language": "sr",
+            "value": "Dart"
+          }
+        ]
+      },
+      {
+        "_key": "item-3",
+        "value": [
+          {
+            "language": "fr",
+            "value": "HTML / CSS"
+          },
+          {
+            "language": "en",
+            "value": "HTML / CSS"
+          },
+          {
+            "language": "sr",
+            "value": "HTML / CSS"
+          }
+        ]
+      },
+      {
+        "_key": "item-4",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Django"
+          },
+          {
+            "language": "en",
+            "value": "Django"
+          },
+          {
+            "language": "sr",
+            "value": "Django"
+          }
+        ]
+      },
+      {
+        "_key": "item-5",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Flutter"
+          },
+          {
+            "language": "en",
+            "value": "Flutter"
+          },
+          {
+            "language": "sr",
+            "value": "Flutter"
+          }
+        ]
+      },
+      {
+        "_key": "item-6",
+        "value": [
+          {
+            "language": "fr",
+            "value": "Automatisation / Développement web"
+          },
+          {
+            "language": "en",
+            "value": "Basic automation / web development"
+          },
+          {
+            "language": "sr",
+            "value": "Osnove automatizacije / web developmenta"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "education-0",
+    "_type": "education",
+    "order": 0,
+    "school": "ESC Troyes",
+    "degree": [
+      {
+        "language": "fr",
+        "value": "Master — Commerce & Management, Innovation & Entrepreneuriat"
+      },
+      {
+        "language": "en",
+        "value": "Master's Degree — Commerce & Management, Innovation & Entrepreneurship"
+      },
+      {
+        "language": "sr",
+        "value": "Master — Trgovina i menadžment, inovacije i preduzetništvo"
+      }
+    ],
+    "period": [
+      {
+        "language": "fr",
+        "value": "2008 — 2011"
+      },
+      {
+        "language": "en",
+        "value": "2008 — 2011"
+      },
+      {
+        "language": "sr",
+        "value": "2008 — 2011"
+      }
+    ],
+    "location": [
+      {
+        "language": "fr",
+        "value": "Troyes, France"
+      },
+      {
+        "language": "en",
+        "value": "Troyes, France"
+      },
+      {
+        "language": "sr",
+        "value": "Troa, Francuska"
+      }
+    ]
+  },
+  {
+    "_id": "education-1",
+    "_type": "education",
+    "order": 1,
+    "school": "Ferris State University",
+    "degree": [
+      {
+        "language": "fr",
+        "value": "Programme d'échange — Business / Management"
+      },
+      {
+        "language": "en",
+        "value": "Exchange Program — Business / Management"
+      },
+      {
+        "language": "sr",
+        "value": "Program razmene — Biznis / Menadžment"
+      }
+    ],
+    "period": [
+      {
+        "language": "fr",
+        "value": "Août 2009 — Déc. 2009"
+      },
+      {
+        "language": "en",
+        "value": "Aug 2009 — Dec 2009"
+      },
+      {
+        "language": "sr",
+        "value": "Avg 2009 — Dec 2009"
+      }
+    ],
+    "location": [
+      {
+        "language": "fr",
+        "value": "Big Rapids, États-Unis"
+      },
+      {
+        "language": "en",
+        "value": "Big Rapids, USA"
+      },
+      {
+        "language": "sr",
+        "value": "Big Rapids, SAD"
+      }
+    ]
+  },
+  {
+    "_id": "education-2",
+    "_type": "education",
+    "order": 2,
+    "school": "Lycée Montaigne",
+    "degree": [
+      {
+        "language": "fr",
+        "value": "Classes préparatoires — Économie & Commerce"
+      },
+      {
+        "language": "en",
+        "value": "Preparatory Classes — Economics & Business"
+      },
+      {
+        "language": "sr",
+        "value": "Pripremne klase — Ekonomija i biznis"
+      }
+    ],
+    "period": [
+      {
+        "language": "fr",
+        "value": "2006 — 2008"
+      },
+      {
+        "language": "en",
+        "value": "2006 — 2008"
+      },
+      {
+        "language": "sr",
+        "value": "2006 — 2008"
+      }
+    ],
+    "location": [
+      {
+        "language": "fr",
+        "value": "Bordeaux, France"
+      },
+      {
+        "language": "en",
+        "value": "Bordeaux, France"
+      },
+      {
+        "language": "sr",
+        "value": "Bordo, Francuska"
+      }
+    ]
+  },
+  {
+    "_id": "certification-0",
+    "_type": "certification",
+    "order": 0,
+    "name": "Computer Science for Web Programming",
+    "provider": "HarvardX"
+  },
+  {
+    "_id": "language-0",
+    "_type": "language",
+    "order": 0,
+    "name": "Français",
+    "level": [
+      {
+        "language": "fr",
+        "value": "Natif"
+      },
+      {
+        "language": "en",
+        "value": "Native"
+      },
+      {
+        "language": "sr",
+        "value": "Maternji"
+      }
+    ]
+  },
+  {
+    "_id": "language-1",
+    "_type": "language",
+    "order": 1,
+    "name": "English",
+    "level": [
+      {
+        "language": "fr",
+        "value": "Courant"
+      },
+      {
+        "language": "en",
+        "value": "Fluent"
+      },
+      {
+        "language": "sr",
+        "value": "Tečno"
+      }
+    ]
+  },
+  {
+    "_id": "language-2",
+    "_type": "language",
+    "order": 2,
+    "name": "Srpski",
+    "level": [
+      {
+        "language": "fr",
+        "value": "B2 — Intermédiaire supérieur"
+      },
+      {
+        "language": "en",
+        "value": "B2 — Upper Intermediate"
+      },
+      {
+        "language": "sr",
+        "value": "B2 — Viši srednji nivo"
+      }
+    ]
+  },
+  {
+    "_id": "album-0",
+    "_type": "album",
+    "order": 0,
+    "title": [
+      {
+        "language": "fr",
+        "value": "Lumière urbaine"
+      },
+      {
+        "language": "en",
+        "value": "Urban light"
+      },
+      {
+        "language": "sr",
+        "value": "Urbansko svetlo"
+      }
+    ],
+    "description": [
+      {
+        "language": "fr",
+        "value": "Rues, reflets et passages : la ville comme terrain de jeu."
+      },
+      {
+        "language": "en",
+        "value": "Streets, reflections and passageways: the city as a playground."
+      },
+      {
+        "language": "sr",
+        "value": "Ulice, odrazi i prolazi: grad kao igralište."
+      }
+    ],
+    "photos": [
+      {
+        "_key": "photo-0",
+        "title": [
+          {
+            "language": "fr",
+            "value": "Rue en pente"
+          },
+          {
+            "language": "en",
+            "value": "Sloping street"
+          },
+          {
+            "language": "sr",
+            "value": "Ulica na nagibu"
+          }
+        ],
+        "location": "Paris",
+        "year": "2024",
+        "ratio": "portrait"
+      },
+      {
+        "_key": "photo-1",
+        "title": [
+          {
+            "language": "fr",
+            "value": "Reflets"
+          },
+          {
+            "language": "en",
+            "value": "Reflections"
+          },
+          {
+            "language": "sr",
+            "value": "Odrazi"
+          }
+        ],
+        "location": "Lyon",
+        "year": "2023",
+        "ratio": "portrait"
+      },
+      {
+        "_key": "photo-2",
+        "title": [
+          {
+            "language": "fr",
+            "value": "Passage"
+          },
+          {
+            "language": "en",
+            "value": "Passageway"
+          },
+          {
+            "language": "sr",
+            "value": "Prolaz"
+          }
+        ],
+        "location": "Marseille",
+        "year": "2024",
+        "ratio": "square"
+      }
+    ]
+  },
+  {
+    "_id": "album-1",
+    "_type": "album",
+    "order": 1,
+    "title": [
+      {
+        "language": "fr",
+        "value": "Horizons"
+      },
+      {
+        "language": "en",
+        "value": "Horizons"
+      },
+      {
+        "language": "sr",
+        "value": "Horizonti"
+      }
+    ],
+    "description": [
+      {
+        "language": "fr",
+        "value": "Grands espaces, lignes d'horizon et lumière rasante."
+      },
+      {
+        "language": "en",
+        "value": "Open spaces, horizon lines and low light."
+      },
+      {
+        "language": "sr",
+        "value": "Otvoreni prostori, linije horizonta i nisko svetlo."
+      }
+    ],
+    "photos": [
+      {
+        "_key": "photo-0",
+        "title": [
+          {
+            "language": "fr",
+            "value": "Côte atlantique"
+          },
+          {
+            "language": "en",
+            "value": "Atlantic coast"
+          },
+          {
+            "language": "sr",
+            "value": "Atlantska obala"
+          }
+        ],
+        "location": "Biarritz",
+        "year": "2022",
+        "ratio": "landscape"
+      },
+      {
+        "_key": "photo-1",
+        "title": [
+          {
+            "language": "fr",
+            "value": "Champs"
+          },
+          {
+            "language": "en",
+            "value": "Fields"
+          },
+          {
+            "language": "sr",
+            "value": "Polja"
+          }
+        ],
+        "location": "Normandie",
+        "year": "2023",
+        "ratio": "landscape"
+      },
+      {
+        "_key": "photo-2",
+        "title": [
+          {
+            "language": "fr",
+            "value": "Mer calme"
+          },
+          {
+            "language": "en",
+            "value": "Calm sea"
+          },
+          {
+            "language": "sr",
+            "value": "Mirno more"
+          }
+        ],
+        "location": "Croatie",
+        "year": "2022",
+        "ratio": "landscape"
+      }
+    ]
+  },
+  {
+    "_id": "album-2",
+    "_type": "album",
+    "order": 2,
+    "title": [
+      {
+        "language": "fr",
+        "value": "Fragments"
+      },
+      {
+        "language": "en",
+        "value": "Fragments"
+      },
+      {
+        "language": "sr",
+        "value": "Fragmenti"
+      }
+    ],
+    "description": [
+      {
+        "language": "fr",
+        "value": "Détails, ombres et textures saisis au plus près."
+      },
+      {
+        "language": "en",
+        "value": "Details, shadows and textures captured up close."
+      },
+      {
+        "language": "sr",
+        "value": "Detalji, senke i teksture snimljene izbliza."
+      }
+    ],
+    "photos": [
+      {
+        "_key": "photo-0",
+        "title": [
+          {
+            "language": "fr",
+            "value": "Détail"
+          },
+          {
+            "language": "en",
+            "value": "Detail"
+          },
+          {
+            "language": "sr",
+            "value": "Detalj"
+          }
+        ],
+        "location": "Paris",
+        "year": "2023",
+        "ratio": "square"
+      },
+      {
+        "_key": "photo-1",
+        "title": [
+          {
+            "language": "fr",
+            "value": "Ombre portée"
+          },
+          {
+            "language": "en",
+            "value": "Cast shadow"
+          },
+          {
+            "language": "sr",
+            "value": "Bačena senka"
+          }
+        ],
+        "location": "Lyon",
+        "year": "2024",
+        "ratio": "portrait"
+      },
+      {
+        "_key": "photo-2",
+        "title": [
+          {
+            "language": "fr",
+            "value": "Textures"
+          },
+          {
+            "language": "en",
+            "value": "Textures"
+          },
+          {
+            "language": "sr",
+            "value": "Teksture"
+          }
+        ],
+        "location": "Paris",
+        "year": "2022",
+        "ratio": "square"
+      }
+    ]
+  },
+  {
+    "_id": "knowledgeTheme-0",
+    "_type": "knowledgeTheme",
+    "order": 0,
+    "title": [
+      {
+        "language": "fr",
+        "value": "Qualité & tests"
+      },
+      {
+        "language": "en",
+        "value": "Quality & testing"
+      },
+      {
+        "language": "sr",
+        "value": "Kvalitet i testiranje"
+      }
+    ],
+    "description": [
+      {
+        "language": "fr",
+        "value": "Fondamentaux pour décider quoi tester et comment."
+      },
+      {
+        "language": "en",
+        "value": "Foundations for deciding what to test and how."
+      },
+      {
+        "language": "sr",
+        "value": "Osnove za odlučivanje šta i kako testirati."
+      }
+    ],
+    "concepts": [
+      {
+        "_key": "concept-0",
+        "id": "test-strategy",
+        "title": [
+          {
+            "language": "fr",
+            "value": "Stratégie de test"
+          },
+          {
+            "language": "en",
+            "value": "Test strategy"
+          },
+          {
+            "language": "sr",
+            "value": "Strategija testiranja"
+          }
+        ],
+        "summary": [
+          {
+            "language": "fr",
+            "value": "Décider quoi tester, à quel niveau et avec quels critères d'acceptation."
+          },
+          {
+            "language": "en",
+            "value": "Decide what to test, at which level and with which acceptance criteria."
+          },
+          {
+            "language": "sr",
+            "value": "Odluči šta testirati, na kom nivou i sa kojim kriterijumima prihvatanja."
+          }
+        ],
+        "tags": [
+          "Stratégie"
+        ]
+      },
+      {
+        "_key": "concept-1",
+        "id": "test-pyramid",
+        "title": [
+          {
+            "language": "fr",
+            "value": "Pyramide des tests"
+          },
+          {
+            "language": "en",
+            "value": "Test pyramid"
+          },
+          {
+            "language": "sr",
+            "value": "Piramida testova"
+          }
+        ],
+        "summary": [
+          {
+            "language": "fr",
+            "value": "Équilibrer tests unitaires, d'intégration et de bout en bout."
+          },
+          {
+            "language": "en",
+            "value": "Balance unit, integration and end-to-end tests."
+          },
+          {
+            "language": "sr",
+            "value": "Uravnoteži unit, integracione i end-to-end testove."
+          }
+        ],
+        "tags": [
+          "Équilibre"
+        ]
+      },
+      {
+        "_key": "concept-2",
+        "id": "risk-based",
+        "title": [
+          {
+            "language": "fr",
+            "value": "Tests basés sur le risque"
+          },
+          {
+            "language": "en",
+            "value": "Risk-based testing"
+          },
+          {
+            "language": "sr",
+            "value": "Testiranje zasnovano na riziku"
+          }
+        ],
+        "summary": [
+          {
+            "language": "fr",
+            "value": "Prioriser l'effort là où l'impact est le plus fort."
+          },
+          {
+            "language": "en",
+            "value": "Focus effort where the impact is highest."
+          },
+          {
+            "language": "sr",
+            "value": "Usmeri napor tamo gde je uticaj najveći."
+          }
+        ],
+        "tags": [
+          "Priorisation"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "knowledgeTheme-1",
+    "_type": "knowledgeTheme",
+    "order": 1,
+    "title": [
+      {
+        "language": "fr",
+        "value": "Automatisation"
+      },
+      {
+        "language": "en",
+        "value": "Automation"
+      },
+      {
+        "language": "sr",
+        "value": "Automatizacija"
+      }
+    ],
+    "description": [
+      {
+        "language": "fr",
+        "value": "Outils et pratiques pour des tests fiables et rapides."
+      },
+      {
+        "language": "en",
+        "value": "Tools and practices for reliable, fast tests."
+      },
+      {
+        "language": "sr",
+        "value": "Alati i prakse za pouzdane i brze testove."
+      }
+    ],
+    "concepts": [
+      {
+        "_key": "concept-0",
+        "id": "fixtures",
+        "title": [
+          {
+            "language": "fr",
+            "value": "Fixtures"
+          },
+          {
+            "language": "en",
+            "value": "Fixtures"
+          },
+          {
+            "language": "sr",
+            "value": "Fixture-i"
+          }
+        ],
+        "summary": [
+          {
+            "language": "fr",
+            "value": "Isoler les données et les états pour des tests fiables."
+          },
+          {
+            "language": "en",
+            "value": "Isolate data and state for reliable tests."
+          },
+          {
+            "language": "sr",
+            "value": "Izoluj podatke i stanja za pouzdane testove."
+          }
+        ],
+        "tags": [
+          "Isolation"
+        ]
+      },
+      {
+        "_key": "concept-1",
+        "id": "flakiness",
+        "title": [
+          {
+            "language": "fr",
+            "value": "Flakiness"
+          },
+          {
+            "language": "en",
+            "value": "Flakiness"
+          },
+          {
+            "language": "sr",
+            "value": "Nestabilnost"
+          }
+        ],
+        "summary": [
+          {
+            "language": "fr",
+            "value": "Traquer les tests instables et restaurer la confiance."
+          },
+          {
+            "language": "en",
+            "value": "Track unstable tests and restore trust."
+          },
+          {
+            "language": "sr",
+            "value": "Prati nestabilne testove i vrati poverenje."
+          }
+        ],
+        "tags": [
+          "Fiabilité"
+        ]
+      },
+      {
+        "_key": "concept-2",
+        "id": "contract",
+        "title": [
+          {
+            "language": "fr",
+            "value": "Tests de contrat"
+          },
+          {
+            "language": "en",
+            "value": "Contract testing"
+          },
+          {
+            "language": "sr",
+            "value": "Contract testiranje"
+          }
+        ],
+        "summary": [
+          {
+            "language": "fr",
+            "value": "Vérifier les interfaces entre services sans tout déployer."
+          },
+          {
+            "language": "en",
+            "value": "Verify interfaces between services without deploying everything."
+          },
+          {
+            "language": "sr",
+            "value": "Proveri interfejse između servisa bez deployovanja svega."
+          }
+        ],
+        "tags": [
+          "API"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "knowledgeTheme-2",
+    "_type": "knowledgeTheme",
+    "order": 2,
+    "title": [
+      {
+        "language": "fr",
+        "value": "Produit & collaboration"
+      },
+      {
+        "language": "en",
+        "value": "Product & collaboration"
+      },
+      {
+        "language": "sr",
+        "value": "Proizvod i saradnja"
+      }
+    ],
+    "description": [
+      {
+        "language": "fr",
+        "value": "La qualité au-delà des tests, dans toute l'équipe."
+      },
+      {
+        "language": "en",
+        "value": "Quality beyond testing, across the whole team."
+      },
+      {
+        "language": "sr",
+        "value": "Kvalitet izvan testiranja, u celom timu."
+      }
+    ],
+    "concepts": [
+      {
+        "_key": "concept-0",
+        "id": "shift-left",
+        "title": [
+          {
+            "language": "fr",
+            "value": "Shift-left"
+          },
+          {
+            "language": "en",
+            "value": "Shift-left"
+          },
+          {
+            "language": "sr",
+            "value": "Shift-left"
+          }
+        ],
+        "summary": [
+          {
+            "language": "fr",
+            "value": "Intégrer la qualité le plus tôt possible dans le cycle."
+          },
+          {
+            "language": "en",
+            "value": "Bring quality into the cycle as early as possible."
+          },
+          {
+            "language": "sr",
+            "value": "Uvedi kvalitet u ciklus što ranije."
+          }
+        ],
+        "tags": [
+          "Process"
+        ]
+      },
+      {
+        "_key": "concept-1",
+        "id": "observability",
+        "title": [
+          {
+            "language": "fr",
+            "value": "Observabilité"
+          },
+          {
+            "language": "en",
+            "value": "Observability"
+          },
+          {
+            "language": "sr",
+            "value": "Observabilnost"
+          }
+        ],
+        "summary": [
+          {
+            "language": "fr",
+            "value": "Mesurer en production pour apprendre et prévenir."
+          },
+          {
+            "language": "en",
+            "value": "Measure in production to learn and prevent."
+          },
+          {
+            "language": "sr",
+            "value": "Meri u produkciji da bi učio i sprečavao."
+          }
+        ],
+        "tags": [
+          "Production"
+        ]
+      },
+      {
+        "_key": "concept-2",
+        "id": "collaboration",
+        "title": [
+          {
+            "language": "fr",
+            "value": "Collaboration"
+          },
+          {
+            "language": "en",
+            "value": "Collaboration"
+          },
+          {
+            "language": "sr",
+            "value": "Saradnja"
+          }
+        ],
+        "summary": [
+          {
+            "language": "fr",
+            "value": "La qualité est une responsabilité partagée par toute l'équipe."
+          },
+          {
+            "language": "en",
+            "value": "Quality is a responsibility shared by the whole team."
+          },
+          {
+            "language": "sr",
+            "value": "Kvalitet je odgovornost celog tima."
+          }
+        ],
+        "tags": [
+          "Équipe"
+        ]
+      }
+    ]
+  }
+]

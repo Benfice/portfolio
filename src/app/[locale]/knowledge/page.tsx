@@ -6,7 +6,7 @@ import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { knowledgeThemes } from "@/content/knowledge";
+import { getKnowledgeThemes } from "@/lib/sanity/content";
 import { pickLocalized } from "@/lib/localized";
 import { localeAlternates } from "@/lib/metadata";
 
@@ -33,6 +33,7 @@ export default async function KnowledgePage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Knowledge");
+  const knowledgeThemes = await getKnowledgeThemes();
 
   return (
     <>

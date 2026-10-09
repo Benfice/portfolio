@@ -6,12 +6,15 @@ import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { certifications, trainingTopics } from "@/content/certifications";
-import { education } from "@/content/education";
-import { experience } from "@/content/experience";
-import { languages } from "@/content/languages";
-import { projects } from "@/content/projects";
-import { skillGroups } from "@/content/skills";
+import {
+  getCertifications,
+  getEducation,
+  getExperience,
+  getLanguages,
+  getProjects,
+  getSkillGroups,
+  getTrainingTopics,
+} from "@/lib/sanity/content";
 import { pickLocalized, pickLocalizedList } from "@/lib/localized";
 import { localeAlternates } from "@/lib/metadata";
 
@@ -38,6 +41,17 @@ export default async function QaPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Qa");
+
+  const [experience, projects, skillGroups, education, certifications, trainingTopics, languages] =
+    await Promise.all([
+      getExperience(),
+      getProjects(),
+      getSkillGroups(),
+      getEducation(),
+      getCertifications(),
+      getTrainingTopics(),
+      getLanguages(),
+    ]);
 
   return (
     <>

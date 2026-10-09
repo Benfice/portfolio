@@ -5,7 +5,7 @@ import { ButtonAnchor } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
-import { profile } from "@/content/profile";
+import { getProfile } from "@/lib/sanity/content";
 import { pickLocalized } from "@/lib/localized";
 import { localeAlternates } from "@/lib/metadata";
 
@@ -32,6 +32,7 @@ export default async function ContactPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Contact");
+  const profile = await getProfile();
 
   return (
     <>

@@ -8,6 +8,7 @@ export type Photo = {
   location: string;
   year: string;
   ratio: PhotoRatio;
+  src?: string | null;
 };
 
 export type Album = {
