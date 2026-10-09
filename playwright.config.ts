@@ -32,9 +32,11 @@ export default defineConfig({
     },
   ],
   webServer: {
+    // Production server: a "next dev" instance cannot coexist (Next 16 locks
+    // the project directory), so E2E runs against a production build.
     command: process.env.CI
       ? `npm run start -- -p ${PORT}`
-      : `npm run dev -- -p ${PORT}`,
+      : `npm run build && npm run start -- -p ${PORT}`,
     url: baseURL,
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,

@@ -76,6 +76,10 @@ persisté dans `localStorage`.
 - Unitaires (Vitest) : `npm test`
 - End-to-end (Playwright) : `npm run test:e2e` — lancés sur trois profils
   (desktop, mobile, tablette), incluant des contrôles d'accessibilité (axe).
+  Les tests E2E tournent contre un **serveur de production** (`next build` +
+  `next start`) sur un port dédié (3100) : `next dev` ne peut pas cohabiter
+  avec un autre `next dev` (verrou de répertoire Next 16). Le `next dev`
+  (port 3000) peut donc rester actif pendant tes E2E.
 
 ## Déploiement
 
