@@ -42,7 +42,8 @@ src/
   app/                 # sitemap.ts, robots.ts
   components/          # Header, Footer, MobileNav, PageHeader, PhotoPlaceholder…
   components/ui/       # primitives (Container, Section, Button, Card…)
-  content/             # contenus typés (profil, expérience, compétences…)
+  content/             # contenus typés (profil, expérience, compétences, projets,
+                       # formation, certifications, langues, photos, connaissances)
   i18n/                # routing + configuration next-intl
   messages/            # chaînes d'interface (fr.json, en.json, sr.json)
   lib/                 # utilitaires (cn, localized, metadata, site, slugify)
@@ -83,6 +84,8 @@ l'URL publique du site pour les métadonnées et le sitemap.
 
 ## Feuille de route
 
-- **Étape 1** — design system, pages et contenus locaux (en cours)
-- **Étape 2** — Sanity (CMS), vraies photos, lightbox, carte de connaissances
+- **Étape 1** — design system, pages et contenus locaux (fait)
+- **Étape 2** — CV réel intégré sur la page QA (fait) : expérience, compétences,
+  projets Plassido, formation, certifications, langues
+- **Étape 3** — Sanity (CMS), vraies photos, lightbox, carte de connaissances
   interactive

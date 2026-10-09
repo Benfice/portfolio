@@ -30,8 +30,8 @@ test("contact page exposes email and social links", async ({ page }) => {
   const main = page.getByRole("main");
 
   await expect(
-    main.getByRole("link", { name: "contact@example.com" }),
-  ).toHaveAttribute("href", "mailto:contact@example.com");
+    main.getByRole("link", { name: "benfice@proton.me" }),
+  ).toHaveAttribute("href", "mailto:benfice@proton.me");
   await expect(
     main.getByRole("link", { name: "GitHub" }),
   ).toBeVisible();

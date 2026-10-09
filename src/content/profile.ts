@@ -8,16 +8,16 @@ export const profile = {
     sr: "QA Lead i fotograf",
   } satisfies Localized,
   location: {
-    fr: "Paris, France",
-    en: "Paris, France",
-    sr: "Pariz, Francuska",
+    fr: "Novi Sad, Serbie",
+    en: "Novi Sad, Serbia",
+    sr: "Novi Sad, Srbija",
   } satisfies Localized,
   availability: {
     fr: "Ouvert aux missions et collaborations",
     en: "Open to missions and collaborations",
     sr: "Otvoren za saradnje i projekte",
   } satisfies Localized,
-  email: "contact@example.com",
+  email: "benfice@proton.me",
   socials: [
     { label: "GitHub", href: "https://github.com/Benfice" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/benoit-freulon" },
