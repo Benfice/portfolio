@@ -140,3 +140,5 @@ ci-dessus si le CMS est utilisé.
   projets Plassido, formation, certifications, langues
 - **Étape 3** — Sanity (CMS) et Studio embarqué, lightbox photo, carte de
   connaissances interactive (fait) ; reste à ajouter les vraies photos
+- **Étape 4** — SEO et partage social : URL canoniques, images Open Graph /
+  Twitter générées, données structurées JSON-LD et analytics (fait)

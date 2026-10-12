@@ -8,7 +8,7 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getKnowledgeThemes } from "@/lib/sanity/content";
 import { pickLocalized } from "@/lib/localized";
-import { localeAlternates } from "@/lib/metadata";
+import { buildPageMetadata } from "@/lib/metadata";
 
 export async function generateMetadata({
   params,
@@ -18,11 +18,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Knowledge" });
 
-  return {
+  return buildPageMetadata({
+    locale,
+    path: "/knowledge",
     title: t("title"),
     description: t("lead"),
-    alternates: localeAlternates("/knowledge"),
-  };
+  });
 }
 
 export default async function KnowledgePage({

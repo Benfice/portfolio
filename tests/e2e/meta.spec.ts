@@ -36,3 +36,35 @@ test("sitemap and robots are available", async ({ request }) => {
   expect(robots.ok()).toBeTruthy();
   expect(await robots.text()).toContain("Sitemap:");
 });
+
+test("pages expose canonical and social metadata", async ({ page }) => {
+  await page.goto("/fr/qa");
+
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+    "href",
+    /\/fr\/qa$/,
+  );
+  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
+    "content",
+    /opengraph-image/,
+  );
+  await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute(
+    "content",
+    "summary_large_image",
+  );
+  await expect(page.locator('meta[property="og:title"]')).toHaveAttribute(
+    "content",
+    /Benoît Freulon/,
+  );
+});
+
+test("pages expose JSON-LD structured data", async ({ page }) => {
+  await page.goto("/fr");
+
+  const jsonLd = page.locator('script[type="application/ld+json"]');
+  await expect(jsonLd).toHaveCount(1);
+  const content = await jsonLd.textContent();
+  expect(content).toContain('"@type":"Person"');
+  expect(content).toContain('"@type":"WebSite"');
+});
+

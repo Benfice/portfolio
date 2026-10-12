@@ -7,7 +7,7 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getAlbums } from "@/lib/sanity/content";
 import { pickLocalized } from "@/lib/localized";
-import { localeAlternates } from "@/lib/metadata";
+import { buildPageMetadata } from "@/lib/metadata";
 
 export async function generateMetadata({
   params,
@@ -17,11 +17,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Photography" });
 
-  return {
+  return buildPageMetadata({
+    locale,
+    path: "/photography",
     title: t("title"),
     description: t("lead"),
-    alternates: localeAlternates("/photography"),
-  };
+  });
 }
 
 export default async function PhotographyPage({

@@ -7,7 +7,7 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getAbout, getProfile } from "@/lib/sanity/content";
 import { pickLocalized, pickLocalizedList } from "@/lib/localized";
-import { localeAlternates } from "@/lib/metadata";
+import { buildPageMetadata } from "@/lib/metadata";
 
 export async function generateMetadata({
   params,
@@ -18,11 +18,12 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "About" });
   const about = await getAbout();
 
-  return {
+  return buildPageMetadata({
+    locale,
+    path: "/about",
     title: t("eyebrow"),
     description: pickLocalized(about.intro, locale),
-    alternates: localeAlternates("/about"),
-  };
+  });
 }
 
 export default async function AboutPage({

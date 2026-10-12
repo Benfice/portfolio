@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Newsreader } from "next/font/google";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { JsonLd } from "@/components/JsonLd";
 import { getProfile } from "@/lib/sanity/content";
+import { pickLocalized } from "@/lib/localized";
 import { routing } from "@/i18n/routing";
 import { getBaseUrl } from "@/lib/site";
 import "../globals.css";
@@ -61,8 +65,9 @@ export async function generateMetadata({
     openGraph: {
       type: "website",
       siteName: profile.name,
-      title: t("title"),
-      description: t("description"),
+    },
+    twitter: {
+      card: "summary_large_image",
     },
   };
 }
@@ -84,6 +89,34 @@ export default async function LocaleLayout({
 
   const t = await getTranslations({ locale, namespace: "Nav" });
   const profile = await getProfile();
+  const base = getBaseUrl();
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": `${base}/#person`,
+        name: profile.name,
+        jobTitle: pickLocalized(profile.role, locale),
+        email: `mailto:${profile.email}`,
+        url: `${base}/${locale}`,
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: pickLocalized(profile.location, locale),
+        },
+        sameAs: profile.socials.map((social) => social.href),
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${base}/#website`,
+        url: base,
+        name: profile.name,
+        inLanguage: locale,
+        publisher: { "@id": `${base}/#person` },
+      },
+    ],
+  };
 
   return (
     <html
@@ -92,6 +125,7 @@ export default async function LocaleLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${display.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
+        <JsonLd data={jsonLd} />
         <Script id="theme-init" strategy="beforeInteractive">
           {themeInitScript}
         </Script>
@@ -108,6 +142,8 @@ export default async function LocaleLayout({
           </main>
           <Footer name={profile.name} socials={profile.socials} />
         </NextIntlClientProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

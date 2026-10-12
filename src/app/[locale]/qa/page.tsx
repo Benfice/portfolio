@@ -16,7 +16,7 @@ import {
   getTrainingTopics,
 } from "@/lib/sanity/content";
 import { pickLocalized, pickLocalizedList } from "@/lib/localized";
-import { localeAlternates } from "@/lib/metadata";
+import { buildPageMetadata } from "@/lib/metadata";
 
 export async function generateMetadata({
   params,
@@ -26,11 +26,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Qa" });
 
-  return {
+  return buildPageMetadata({
+    locale,
+    path: "/qa",
     title: t("title"),
     description: t("lead"),
-    alternates: localeAlternates("/qa"),
-  };
+  });
 }
 
 export default async function QaPage({

@@ -7,7 +7,7 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Link } from "@/i18n/navigation";
 import { getProfile } from "@/lib/sanity/content";
-import { localeAlternates } from "@/lib/metadata";
+import { buildPageMetadata } from "@/lib/metadata";
 import { pickLocalized } from "@/lib/localized";
 
 export async function generateMetadata({
@@ -15,9 +15,9 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  await params;
+  const { locale } = await params;
 
-  return { alternates: localeAlternates("/") };
+  return buildPageMetadata({ locale, path: "/" });
 }
 
 export default async function HomePage({
