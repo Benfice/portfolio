@@ -8,6 +8,14 @@ on:
 jobs:
   quality:
     runs-on: ubuntu-latest
+    env:
+      # Optional: when these repository secrets are configured, the build reads
+      # live content from Sanity. Left empty, the site falls back to the
+      # committed snapshot (sanity/snapshot.json).
+      NEXT_PUBLIC_SANITY_PROJECT_ID: ${{ secrets.NEXT_PUBLIC_SANITY_PROJECT_ID }}
+      NEXT_PUBLIC_SANITY_DATASET: ${{ secrets.NEXT_PUBLIC_SANITY_DATASET }}
+      SANITY_API_READ_TOKEN: ${{ secrets.SANITY_API_READ_TOKEN }}
+      SANITY_API_WRITE_TOKEN: ${{ secrets.SANITY_API_WRITE_TOKEN }}
     steps:
       - uses: actions/checkout@v7
 
@@ -30,6 +38,11 @@ jobs:
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
+
+      - name: Sync content to Sanity
+        # Only runs when a write token is configured; otherwise skipped.
+        if: ${{ env.SANITY_API_WRITE_TOKEN != '' }}
+        run: npm run seed:sanity
 
       - name: Build
         run: npm run build
