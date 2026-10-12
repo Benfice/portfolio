@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 
 export type ContactFormProps = {
   labels: {
@@ -19,14 +19,14 @@ export type ContactFormProps = {
 
 export function ContactForm({ labels, emailFallback }: ContactFormProps) {
   const [honeypot, setHoneypot] = useState("");
-  const [submittedAt, setSubmittedAt] = useState<number>(0);
+  const submittedAt = useRef<number>(0);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">(
     "idle",
   );
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   useEffect(() => {
-    setSubmittedAt(Date.now());
+    submittedAt.current = Date.now();
   }, []);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -41,13 +41,13 @@ export function ContactForm({ labels, emailFallback }: ContactFormProps) {
     }
 
     const now = Date.now();
-    if (submittedAt && now - submittedAt < 2000) {
+    if (submittedAt.current && now - submittedAt.current < 2000) {
       setStatus("error");
       setErrorMessage(labels.error);
       return;
     }
 
-    setSubmittedAt(now);
+    submittedAt.current = now;
     setStatus("loading");
     setErrorMessage(null);
 

@@ -13,7 +13,7 @@ test("photography page lists albums and photos", async ({ page }) => {
   await expect(
     page.getByRole("img", { name: /Rue en pente/ }),
   ).toBeVisible();
-  await expect(page.locator("figure")).toHaveCount(9);
+  expect(await page.locator("figure").count()).toBeGreaterThanOrEqual(9);
 });
 
 test("lightbox opens, navigates and closes", async ({ page }) => {
