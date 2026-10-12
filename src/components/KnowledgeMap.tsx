@@ -54,9 +54,9 @@ function buildLayout(themes: MapTheme[]): MapLayout {
 
   const margin = 0.12;
   const usable = 1 - margin * 2;
-  const themeX = 0.16;
-  const conceptX = 0.48;
-  const tagX = 0.8;
+  const themeX = 0.1;
+  const conceptX = 0.4;
+  const tagX = 0.7;
 
   const conceptTotal =
     themes.reduce((sum, theme) => sum + theme.concepts.length, 0) || 1;
@@ -197,20 +197,6 @@ export function KnowledgeMap({ themes }: { themes: MapTheme[] }) {
               />
             );
           })}
-          {layout.nodes.map((node) => {
-            const dimmed = highlighted !== null && !highlighted.has(node.id);
-            return (
-              <circle
-                key={node.id}
-                cx={node.x}
-                cy={node.y}
-                r={node.kind === "tag" ? 0.008 : 0.011}
-                fill="currentColor"
-                opacity={dimmed ? 0.08 : 0.35}
-                className="transition-opacity duration-200"
-              />
-            );
-          })}
         </svg>
 
         {layout.nodes.map((node) => {
@@ -232,17 +218,23 @@ export function KnowledgeMap({ themes }: { themes: MapTheme[] }) {
                 left: `${node.x * 100}%`,
                 top: `${node.y * 100}%`,
               }}
-              className={`absolute inline-flex max-w-[38%] -translate-x-1/2 -translate-y-1/2 items-center justify-center truncate rounded-full border px-3 py-1 text-center text-xs transition-opacity duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:max-w-[32%] sm:text-sm ${
+              className={`absolute flex max-w-[28%] -translate-y-1/2 items-center rounded-full border py-1 pr-3 pl-4 text-left text-xs transition-opacity duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:text-sm ${
                 node.kind === "theme"
                   ? "border-accent/40 bg-accent/10 font-medium text-foreground"
                   : node.kind === "tag"
-                    ? "border-border/60 text-muted"
+                    ? "border-border/60 bg-surface text-muted"
                     : "border-border bg-surface text-foreground"
               } ${dimmed ? "opacity-25" : "opacity-100"} ${
                 selectedThis ? "ring-2 ring-accent" : ""
               }`}
             >
-              {node.label}
+              <span
+                aria-hidden="true"
+                className={`absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-current opacity-60 ${
+                  node.kind === "tag" ? "h-1.5 w-1.5" : "h-2.5 w-2.5"
+                }`}
+              />
+              <span className="min-w-0 truncate">{node.label}</span>
             </button>
           );
         })}
