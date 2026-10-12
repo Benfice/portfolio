@@ -93,7 +93,18 @@
     "emailLabel": "Email me",
     "socialsTitle": "Find me online",
     "locationLabel": "Location",
-    "availabilityLabel": "Availability"
+    "availabilityLabel": "Availability",
+    "form": {
+      "success": "Message sent successfully!",
+      "error": "An error occurred. Please try again later.",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "honeypot": "Do not fill this field",
+      "submit": "Send",
+      "loading": "Sending..."
+    }
   },
   "Theme": {
     "toggle": "Toggle theme"

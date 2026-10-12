@@ -1,10 +1,10 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/PageHeader";
-import { ButtonAnchor } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
+import { ContactForm } from "@/components/ContactForm";
 import { getProfile } from "@/lib/sanity/content";
 import { pickLocalized } from "@/lib/localized";
 import { buildPageMetadata } from "@/lib/metadata";
@@ -35,6 +35,18 @@ export default async function ContactPage({
   const t = await getTranslations("Contact");
   const profile = await getProfile();
 
+  const formLabels = t.raw("form") as {
+    name: string;
+    email: string;
+    subject: string;
+    message: string;
+    honeypot: string;
+    submit: string;
+    loading: string;
+    success: string;
+    error: string;
+  };
+
   return (
     <>
       <PageHeader
@@ -45,7 +57,8 @@ export default async function ContactPage({
 
       <Section className="pt-0">
         <Container>
-          <div className="grid gap-6 sm:grid-cols-2">
+          <ContactForm labels={formLabels} emailFallback={profile.email} />
+          <div className="mt-10 grid gap-6 sm:grid-cols-2">
             <Card className="flex flex-col">
               <h2 className="text-lg">{t("emailLabel")}</h2>
               <p className="mt-3 flex-1 text-muted">
@@ -56,11 +69,6 @@ export default async function ContactPage({
                   {profile.email}
                 </a>
               </p>
-              <div className="mt-6">
-                <ButtonAnchor href={`mailto:${profile.email}`}>
-                  {t("emailLabel")}
-                </ButtonAnchor>
-              </div>
             </Card>
 
             <Card>

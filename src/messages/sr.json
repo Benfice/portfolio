@@ -93,7 +93,18 @@
     "emailLabel": "Pošaljite mi mejl",
     "socialsTitle": "Pronađite me",
     "locationLabel": "Lokacija",
-    "availabilityLabel": "Dostupnost"
+    "availabilityLabel": "Dostupnost",
+    "form": {
+      "success": "Poruka je uspešno poslata!",
+      "error": "Došlo je do greške. Molimo pokušajte ponovo.",
+      "name": "Ime",
+      "email": "Email",
+      "subject": "Predmet",
+      "message": "Poruka",
+      "honeypot": "Ne popunjavati ovo polje",
+      "submit": "Pošalji",
+      "loading": "Slanje..."
+    }
   },
   "Theme": {
     "toggle": "Promeni temu"

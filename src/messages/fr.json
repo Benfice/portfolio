@@ -93,7 +93,18 @@
     "emailLabel": "Écrivez-moi",
     "socialsTitle": "Retrouvez-moi",
     "locationLabel": "Localisation",
-    "availabilityLabel": "Disponibilité"
+    "availabilityLabel": "Disponibilité",
+    "form": {
+      "success": "Message envoyé avec succès !",
+      "error": "Une erreur est survenue. Veuillez réessayer plus tard.",
+      "name": "Nom",
+      "email": "E-mail",
+      "subject": "Sujet",
+      "message": "Message",
+      "honeypot": "Ne pas remplir ce champ",
+      "submit": "Envoyer",
+      "loading": "Envoi en cours..."
+    }
   },
   "Theme": {
     "toggle": "Changer de thème"
