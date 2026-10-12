@@ -54,7 +54,7 @@ function buildLayout(themes: MapTheme[]): MapLayout {
 
   const margin = 0.12;
   const usable = 1 - margin * 2;
-  const themeX = 0.1;
+  const themeX = 0.3;
   const conceptX = 0.4;
   const tagX = 0.7;
 
@@ -202,6 +202,7 @@ export function KnowledgeMap({ themes }: { themes: MapTheme[] }) {
         {layout.nodes.map((node) => {
           const dimmed = highlighted !== null && !highlighted.has(node.id);
           const selectedThis = selectedId === node.id;
+          const isTheme = node.kind === "theme";
 
           return (
             <button
@@ -218,7 +219,11 @@ export function KnowledgeMap({ themes }: { themes: MapTheme[] }) {
                 left: `${node.x * 100}%`,
                 top: `${node.y * 100}%`,
               }}
-              className={`absolute flex max-w-[28%] -translate-y-1/2 items-center rounded-full border py-1 pr-3 pl-4 text-left text-xs transition-opacity duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:text-sm ${
+              className={`absolute flex max-w-[28%] items-center rounded-full border py-1 text-left text-xs transition-opacity duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:text-sm ${
+                isTheme
+                  ? "-translate-x-full -translate-y-1/2 pr-4 pl-3"
+                  : "-translate-y-1/2 pl-4 pr-3"
+              } ${
                 node.kind === "theme"
                   ? "border-accent/40 bg-accent/10 font-medium text-foreground"
                   : node.kind === "tag"
@@ -230,9 +235,11 @@ export function KnowledgeMap({ themes }: { themes: MapTheme[] }) {
             >
               <span
                 aria-hidden="true"
-                className={`absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-current opacity-60 ${
-                  node.kind === "tag" ? "h-1.5 w-1.5" : "h-2.5 w-2.5"
-                }`}
+                className={`absolute top-1/2 -translate-y-1/2 rounded-full bg-current opacity-60 ${
+                  isTheme
+                    ? "right-0 translate-x-1/2"
+                    : "left-0 -translate-x-1/2"
+                } ${node.kind === "tag" ? "h-1.5 w-1.5" : "h-2.5 w-2.5"}`}
               />
               <span className="min-w-0 truncate">{node.label}</span>
             </button>
