@@ -5,10 +5,12 @@ export function PageHeader({
   eyebrow,
   title,
   lead,
+  action,
 }: {
   eyebrow?: string;
   title: string;
   lead?: string;
+  action?: React.ReactNode;
 }) {
   return (
     <Section className="pb-4 pt-16 sm:pt-24">
@@ -24,6 +26,7 @@ export function PageHeader({
         {lead ? (
           <p className="mt-6 max-w-2xl text-xl leading-9 text-muted">{lead}</p>
         ) : null}
+        {action ? <div className="mt-8">{action}</div> : null}
       </Container>
     </Section>
   );

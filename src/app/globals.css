@@ -50,3 +50,75 @@
     font-weight: 500;
   }
 }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 1.4cm;
+  }
+
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt;
+  }
+
+  a {
+    color: #000000 !important;
+    text-decoration: none;
+  }
+
+  header,
+  footer,
+  nav,
+  .skip-link,
+  button:not([type="button"]):not([type="submit"]),
+  .print\:hidden {
+    display: none !important;
+  }
+
+  main {
+    flex: 1 1 auto !important;
+  }
+
+  .border,
+  .border-border,
+  .ring,
+  .shadow,
+  .shadow-sm,
+  .shadow-lg,
+  .shadow-xl,
+  .rounded,
+  .rounded-md,
+  .rounded-lg,
+  .rounded-xl,
+  .rounded-full {
+    box-shadow: none !important;
+    border: 1px solid #e5e5e5 !important;
+  }
+
+  [class*="bg-foreground/5"] {
+    background: #f7f7f7 !important;
+  }
+
+  [class*="text-accent"] {
+    color: #000000 !important;
+  }
+
+  [class*="text-muted"] {
+    color: #444444 !important;
+  }
+
+  section,
+  article,
+  .card,
+  .container {
+    break-inside: avoid;
+  }
+}
+

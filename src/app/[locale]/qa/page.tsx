@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { PrintButton } from "@/components/PrintButton";
 import {
   getCertifications,
   getEducation,
@@ -60,6 +61,7 @@ export default async function QaPage({
         eyebrow={t("eyebrow")}
         title={t("title")}
         lead={t("lead")}
+        action={<PrintButton label={t("printCv")} />}
       />
 
       <Section>
