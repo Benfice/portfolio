@@ -63,7 +63,7 @@ export async function POST(request: Request) {
     }
 
     const resendApiKey = process.env.RESEND_API_KEY;
-    const to = process.env.CONTACT_TO_EMAIL || "benfice@proton.me";
+    const to = process.env.CONTACT_TO_EMAIL || "bfreulon@orange.fr";
     const from = process.env.RESEND_FROM_EMAIL || "Portfolio <onboarding@resend.dev>";
 
     if (resendApiKey) {
