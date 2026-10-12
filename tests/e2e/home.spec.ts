@@ -19,10 +19,14 @@ for (const locale of locales) {
 
 test("switches language while staying on the same page", async ({ page }) => {
   await page.goto("/fr");
-  await expect(page.getByRole("heading", { level: 1 })).toContainText("fiables");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText(
+    "Créativité",
+  );
 
   await page.getByRole("combobox").selectOption("en");
 
   await expect(page).toHaveURL(/\/en$/);
-  await expect(page.getByRole("heading", { level: 1 })).toContainText("reliable");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText(
+    "Creativity",
+  );
 });
