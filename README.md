@@ -127,11 +127,29 @@ La CI (`.github/workflows/ci.yml`) installe Chromium (`playwright install
 optionnelle : elle ne s'exécute que si le secret `SANITY_API_WRITE_TOKEN` est
 défini.
 
+## Formulaire de contact
+
+La page `/contact` poste vers `src/app/api/contact/route.ts`, qui envoie le
+message via [Resend](https://resend.com) (protection par honeypot, délai
+minimal de 2 s et limite de 5 requêtes/minute par IP). Le lien `mailto` reste
+disponible comme secours.
+
+| Variable | Rôle |
+| --- | --- |
+| `RESEND_API_KEY` | Clé API Resend ; sans elle, la route répond `success` sans envoyer |
+| `CONTACT_TO_EMAIL` | Destinataire des messages (défaut : email du propriétaire) |
+| `RESEND_FROM_EMAIL` | Expéditeur (défaut : `Portfolio <onboarding@resend.dev>`) |
+
+Tant que le compte Resend est en **mode test** (aucun domaine vérifié), l'envoi
+n'est autorisé que vers l'adresse email du compte, avec l'expéditeur
+`onboarding@resend.dev`. Vérifier un domaine sur Resend pour envoyer vers
+n'importe quelle adresse et personnaliser `RESEND_FROM_EMAIL`.
+
 ## Déploiement
 
-Prévu sur [Vercel](https://vercel.com). Définir `NEXT_PUBLIC_SITE_URL` avec
-l'URL publique du site (métadonnées et sitemap) ainsi que les variables Sanity
-ci-dessus si le CMS est utilisé.
+Déployé sur [Vercel](https://vercel.com). Définir `NEXT_PUBLIC_SITE_URL` avec
+l'URL publique du site (métadonnées et sitemap), les variables Sanity ci-dessus
+si le CMS est utilisé, et les variables Resend pour le formulaire de contact.
 
 ## Feuille de route
 
@@ -140,5 +158,7 @@ ci-dessus si le CMS est utilisé.
   projets Plassido, formation, certifications, langues
 - **Étape 3** — Sanity (CMS) et Studio embarqué, lightbox photo, carte de
   connaissances interactive (fait) ; reste à ajouter les vraies photos
-- **Étape 4** — SEO et partage social : URL canoniques, images Open Graph /
-  Twitter générées, données structurées JSON-LD et analytics (fait)
+- **Étape 4** — SEO, CV imprimable et contact (fait) : URL canoniques, images
+  Open Graph / Twitter générées, données structurées JSON-LD et analytics ;
+  bouton d'impression du CV avec styles `@media print` ; formulaire de contact
+  envoyé via Resend (honeypot, délai minimal et rate limiting)
