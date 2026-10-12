@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { about } from "../src/content/about";
 import { certifications, trainingTopics } from "../src/content/certifications";
@@ -13,6 +13,11 @@ import { skillGroups } from "../src/content/skills";
 import type { Locale } from "../src/i18n/routing";
 
 const locales: Locale[] = ["fr", "en", "sr"];
+
+const envFile = path.resolve(process.cwd(), ".env.local");
+if (existsSync(envFile)) {
+  (process as { loadEnvFile?: (file?: string) => void }).loadEnvFile?.(envFile);
+}
 
 function toI18n(field: Record<Locale, string>): { language: string; value: string }[] {
   return locales.map((language) => ({ language, value: field[language] }));
