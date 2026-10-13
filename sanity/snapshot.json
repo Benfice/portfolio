@@ -2509,6 +2509,7 @@
     "photos": [
       {
         "_key": "photo-0",
+        "_type": "image",
         "title": [
           {
             "language": "fr",
@@ -2529,6 +2530,7 @@
       },
       {
         "_key": "photo-1",
+        "_type": "image",
         "title": [
           {
             "language": "fr",
@@ -2549,6 +2551,7 @@
       },
       {
         "_key": "photo-2",
+        "_type": "image",
         "title": [
           {
             "language": "fr",
@@ -2604,6 +2607,7 @@
     "photos": [
       {
         "_key": "photo-0",
+        "_type": "image",
         "title": [
           {
             "language": "fr",
@@ -2624,6 +2628,7 @@
       },
       {
         "_key": "photo-1",
+        "_type": "image",
         "title": [
           {
             "language": "fr",
@@ -2644,6 +2649,7 @@
       },
       {
         "_key": "photo-2",
+        "_type": "image",
         "title": [
           {
             "language": "fr",
@@ -2699,6 +2705,7 @@
     "photos": [
       {
         "_key": "photo-0",
+        "_type": "image",
         "title": [
           {
             "language": "fr",
@@ -2719,6 +2726,7 @@
       },
       {
         "_key": "photo-1",
+        "_type": "image",
         "title": [
           {
             "language": "fr",
@@ -2739,6 +2747,7 @@
       },
       {
         "_key": "photo-2",
+        "_type": "image",
         "title": [
           {
             "language": "fr",

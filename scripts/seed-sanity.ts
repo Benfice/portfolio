@@ -163,6 +163,7 @@ export function buildDocuments(): Doc[] {
       description: toI18n(album.description),
       photos: album.photos.map((photo, photoIndex) => ({
         _key: `photo-${photoIndex}`,
+        _type: "image",
         title: toI18n(photo.title),
         location: photo.location,
         year: photo.year,

@@ -14,8 +14,8 @@ export const album = defineType({
       type: "array",
       of: [
         {
-          type: "object",
-          name: "photo",
+          type: "image",
+          options: { hotspot: true },
           fields: [
             { name: "title", title: "Titre", type: "internationalizedArrayString" },
             { name: "location", title: "Lieu", type: "string" },
@@ -31,12 +31,6 @@ export const album = defineType({
                   { title: "Carré", value: "square" },
                 ],
               },
-            },
-            {
-              name: "image",
-              title: "Image",
-              type: "image",
-              options: { hotspot: true },
             },
           ],
           preview: {

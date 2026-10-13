@@ -162,7 +162,9 @@ export function mapAlbum(
     location: asString(photo.location),
     year: asString(photo.year),
     ratio: asRatios(photo.ratio) ?? "square",
-    src: photoUrl(photo.image as { asset?: { _ref?: string } } | undefined),
+    src: photoUrl(
+      (photo.image ?? photo) as { asset?: { _ref?: string } } | undefined,
+    ),
   }));
 
   return {
