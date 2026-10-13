@@ -65,8 +65,8 @@
   },
   "Photography": {
     "eyebrow": "Photographie",
-    "title": "Des images, entre lumière naturelle et composition.",
-    "lead": "Une sélection de séries personnelles : voyage, architecture et scènes du quotidien.",
+    "title": "Ma vision du monde en images.",
+    "lead": "Des instants, des lieux et des détails qui attirent mon regard et racontent quelque chose de ma façon de voir le monde.",
     "openPhoto": "Ouvrir la photo « {title} »",
     "close": "Fermer",
     "previous": "Photo précédente",
