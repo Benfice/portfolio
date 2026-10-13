@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/JsonLd";
 import { PageHeader } from "@/components/PageHeader";
 import { PhotoGallery } from "@/components/PhotoGallery";
 import { Container } from "@/components/ui/Container";
@@ -8,6 +9,8 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getAlbums } from "@/lib/sanity/content";
 import { pickLocalized } from "@/lib/localized";
 import { buildPageMetadata } from "@/lib/metadata";
+import { getBaseUrl } from "@/lib/site";
+import { buildBreadcrumbs, buildImageGallery } from "@/lib/structured-data";
 
 export async function generateMetadata({
   params,
@@ -20,8 +23,8 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: "/photography",
-    title: t("title"),
-    description: t("lead"),
+    absoluteTitle: t("metaTitle"),
+    description: t("metaDescription"),
   });
 }
 
@@ -33,10 +36,29 @@ export default async function PhotographyPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Photography");
+  const nav = await getTranslations("Nav");
   const albums = await getAlbums();
+
+  const base = getBaseUrl();
+  const breadcrumbs = buildBreadcrumbs({
+    base,
+    locale,
+    items: [
+      { name: nav("home"), path: "/" },
+      { name: nav("photography"), path: "/photography" },
+    ],
+  });
+  const gallery = buildImageGallery({
+    locale,
+    albums,
+    pageUrl: `${base}/${locale}/photography`,
+    pageName: t("metaTitle"),
+  });
 
   return (
     <>
+      <JsonLd data={breadcrumbs} />
+      <JsonLd data={gallery} />
       <PageHeader
         eyebrow={t("eyebrow")}
         title={t("title")}

@@ -5,7 +5,7 @@ test.use({ locale: "fr-FR" });
 test("QA page exposes localized metadata", async ({ page }) => {
   await page.goto("/fr/qa");
 
-  await expect(page).toHaveTitle(/La qualité, du test manuel/);
+  await expect(page).toHaveTitle(/Profil QA Lead/);
   await expect(page).toHaveTitle(/Benoît Freulon/);
 });
 

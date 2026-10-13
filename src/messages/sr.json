@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Benoît Freulon — QA Lead i fotograf",
-    "description": "Portfolio Benoît Freulon: QA profil, fotografije i mapa znanja."
+    "title": "Benoît Freulon — fotograf i QA Lead u Novom Sadu",
+    "description": "Portfolio Benoît Freulon: fotografija u Novom Sadu, QA profil i mapa znanja o kvalitetu softvera."
   },
   "Nav": {
     "primary": "Glavna navigacija",
@@ -41,6 +41,8 @@
   "Qa": {
     "eyebrow": "Kvalitet softvera",
     "title": "Kvalitet – od ručnog testiranja do automatizacije.",
+    "metaTitle": "QA Lead profil — Benoît Freulon (Novi Sad)",
+    "metaDescription": "Benoît Freulon, QA Lead u Novom Sadu: strategija testiranja, automatizacija, Shift-left i kvalitet softvera.",
     "lead": "QA Lead orijentisan na Shift-left: pomažem timovima da brže isporučuju bez kompromisa kvaliteta.",
     "experienceEyebrow": "Karijera",
     "experienceTitle": "Profesionalno iskustvo",
@@ -66,6 +68,8 @@
   "Photography": {
     "eyebrow": "Fotografija",
     "title": "Moja vizija sveta u slikama.",
+    "metaTitle": "Fotografija — Benoît Freulon (Novi Sad)",
+    "metaDescription": "Fotografska galerija Benoît Freulon: lične serije u Novom Sadu i šire — putovanja, arhitektura, portreti i svakodnevne scene.",
     "lead": "Trenuci, mesta i detalji koji privlače moj pogled i govore nešto o tome kako vidim svet.",
     "openPhoto": "Otvori fotografiju „{title}“",
     "close": "Zatvori",
@@ -75,6 +79,8 @@
   "Knowledge": {
     "eyebrow": "Znanje",
     "title": "Mapa pojmova koja raste sa mnom.",
+    "metaTitle": "Mapa znanja — Benoît Freulon",
+    "metaDescription": "Mapa pojmova, metoda i alata o kvalitetu softvera, testiranju i automatizaciji — Benoît Freulon.",
     "lead": "Beleške, metode i alati koje stalno istražujem, organizovani na interaktivnoj mapi.",
     "mapTitle": "Mapa znanja",
     "mapHint": "Istražite mapu tastaturom (Tab + Enter). Izaberite temu ili oznaku da je istaknete, pojam za prikaz detalja.",
@@ -83,12 +89,15 @@
   },
   "About": {
     "eyebrow": "O meni",
+    "metaTitle": "O Benoît Freulon — fotograf i QA Lead u Novom Sadu",
     "principlesTitle": "Šta me vodi",
     "ctaButton": "Kontaktiraj me"
   },
   "Contact": {
     "eyebrow": "Kontakt",
     "title": "Hajde da popričamo o vašem projektu.",
+    "metaTitle": "Kontakt — Benoît Freulon",
+    "metaDescription": "Kontaktirajte Benoît Freulon za QA misiju, foto projekat ili pitanje o kvalitetu softvera.",
     "lead": "QA misija, foto projekat ili jednostavno želja za razgovorom? Pišite mi.",
     "emailLabel": "Pošaljite mi mejl",
     "socialsTitle": "Pronađite me",

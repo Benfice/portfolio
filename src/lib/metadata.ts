@@ -17,11 +17,13 @@ export function buildPageMetadata({
   locale,
   path,
   title,
+  absoluteTitle,
   description,
 }: {
   locale: string;
   path: string;
   title?: string;
+  absoluteTitle?: string;
   description?: string;
 }): Metadata {
   const suffix = path === "/" ? "" : path;
@@ -34,7 +36,9 @@ export function buildPageMetadata({
     },
   };
 
-  if (title) {
+  if (absoluteTitle) {
+    metadata.title = { absolute: absoluteTitle };
+  } else if (title) {
     metadata.title = title;
   }
 

@@ -9,8 +9,8 @@ import { notFound } from "next/navigation";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
+import { buildHomeGraph } from "@/lib/structured-data";
 import { getProfile } from "@/lib/sanity/content";
-import { pickLocalized } from "@/lib/localized";
 import { routing } from "@/i18n/routing";
 import { getBaseUrl } from "@/lib/site";
 import "../globals.css";
@@ -54,6 +54,8 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
   const profile = await getProfile();
+  const google = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+  const bing = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION;
 
   return {
     metadataBase: new URL(getBaseUrl()),
@@ -69,6 +71,14 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
     },
+    ...(google || bing
+      ? {
+          verification: {
+            ...(google ? { google } : {}),
+            ...(bing ? { other: { "msvalidate.01": bing } } : {}),
+          },
+        }
+      : {}),
   };
 }
 
@@ -91,32 +101,7 @@ export default async function LocaleLayout({
   const profile = await getProfile();
   const base = getBaseUrl();
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "@id": `${base}/#person`,
-        name: profile.name,
-        jobTitle: pickLocalized(profile.role, locale),
-        email: `mailto:${profile.email}`,
-        url: `${base}/${locale}`,
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: pickLocalized(profile.location, locale),
-        },
-        sameAs: profile.socials.map((social) => social.href),
-      },
-      {
-        "@type": "WebSite",
-        "@id": `${base}/#website`,
-        url: base,
-        name: profile.name,
-        inLanguage: locale,
-        publisher: { "@id": `${base}/#person` },
-      },
-    ],
-  };
+  const jsonLd = buildHomeGraph({ base, locale, profile });
 
   return (
     <html

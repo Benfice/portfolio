@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/JsonLd";
 import { PageHeader } from "@/components/PageHeader";
 import { ButtonLink } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
@@ -18,6 +19,8 @@ import {
 } from "@/lib/sanity/content";
 import { pickLocalized, pickLocalizedList } from "@/lib/localized";
 import { buildPageMetadata } from "@/lib/metadata";
+import { getBaseUrl } from "@/lib/site";
+import { buildBreadcrumbs } from "@/lib/structured-data";
 
 export async function generateMetadata({
   params,
@@ -30,8 +33,8 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: "/qa",
-    title: t("title"),
-    description: t("lead"),
+    absoluteTitle: t("metaTitle"),
+    description: t("metaDescription"),
   });
 }
 
@@ -43,6 +46,15 @@ export default async function QaPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Qa");
+  const nav = await getTranslations("Nav");
+  const breadcrumbs = buildBreadcrumbs({
+    base: getBaseUrl(),
+    locale,
+    items: [
+      { name: nav("home"), path: "/" },
+      { name: nav("qa"), path: "/qa" },
+    ],
+  });
 
   const [experience, projects, skillGroups, education, certifications, trainingTopics, languages] =
     await Promise.all([
@@ -57,6 +69,7 @@ export default async function QaPage({
 
   return (
     <>
+      <JsonLd data={breadcrumbs} />
       <PageHeader
         eyebrow={t("eyebrow")}
         title={t("title")}

@@ -44,6 +44,22 @@ describe("buildPageMetadata", () => {
     });
   });
 
+  it("uses an absolute title when provided", () => {
+    process.env.NEXT_PUBLIC_SITE_URL = "https://example.com";
+
+    const metadata = buildPageMetadata({
+      locale: "fr",
+      path: "/photography",
+      absoluteTitle: "Photographie — Benoît Freulon (Novi Sad)",
+      title: "ignored",
+      description: "Description",
+    });
+
+    expect(metadata.title).toEqual({
+      absolute: "Photographie — Benoît Freulon (Novi Sad)",
+    });
+  });
+
   it("omits the path suffix for the home page", () => {
     process.env.NEXT_PUBLIC_SITE_URL = "https://example.com";
 

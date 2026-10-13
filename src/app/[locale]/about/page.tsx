@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/JsonLd";
 import { PageHeader } from "@/components/PageHeader";
 import { ButtonLink } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -8,6 +9,8 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getAbout, getProfile } from "@/lib/sanity/content";
 import { pickLocalized, pickLocalizedList } from "@/lib/localized";
 import { buildPageMetadata } from "@/lib/metadata";
+import { getBaseUrl } from "@/lib/site";
+import { buildBreadcrumbs } from "@/lib/structured-data";
 
 export async function generateMetadata({
   params,
@@ -21,7 +24,7 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: "/about",
-    title: t("eyebrow"),
+    absoluteTitle: t("metaTitle"),
     description: pickLocalized(about.intro, locale),
   });
 }
@@ -34,10 +37,20 @@ export default async function AboutPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("About");
+  const nav = await getTranslations("Nav");
   const [about, profile] = await Promise.all([getAbout(), getProfile()]);
+  const breadcrumbs = buildBreadcrumbs({
+    base: getBaseUrl(),
+    locale,
+    items: [
+      { name: nav("home"), path: "/" },
+      { name: nav("about"), path: "/about" },
+    ],
+  });
 
   return (
     <>
+      <JsonLd data={breadcrumbs} />
       <PageHeader
         eyebrow={t("eyebrow")}
         title={profile.name}

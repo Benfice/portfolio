@@ -151,6 +151,45 @@ Déployé sur [Vercel](https://vercel.com). Définir `NEXT_PUBLIC_SITE_URL` avec
 l'URL publique du site (métadonnées et sitemap), les variables Sanity ci-dessus
 si le CMS est utilisé, et les variables Resend pour le formulaire de contact.
 
+## SEO
+
+Le référencement repose à la fois sur le code (balises, données structurées,
+sitemap) et sur des signaux hors-site.
+
+### Côté code
+
+- `NEXT_PUBLIC_SITE_URL` définit le domaine canonique (canonical, `hreflang`,
+  Open Graph, sitemap). Sans elle sur Vercel, `VERCEL_PROJECT_PRODUCTION_URL`
+  puis `VERCEL_URL` servent de repli.
+- Titres `<title>` et descriptions riches en mots-clés par page (nom, photographie,
+  Novi Sad), JSON-LD `Person` (avec `alternateName` « Benoit Freulon »),
+  `WebSite`, `BreadcrumbList` et `ImageGallery`.
+- Vérification Search Console / Bing via `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`
+  et `NEXT_PUBLIC_BING_SITE_VERIFICATION`.
+
+### Mise en place (une fois)
+
+1. Créer une propriété Google Search Console (« Préfixe d'URL » :
+   `https://benoitfreulon.vercel.app`), copier le jeton de vérification et le
+   mettre dans `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` (Vercel → Production +
+   Preview), puis redéployer.
+2. Soumettre `https://benoitfreulon.vercel.app/sitemap.xml`.
+3. Bing Webmaster Tools : importer depuis Search Console (jeton `msvalidate.01`
+   si besoin).
+4. Demander l'indexation des pages principales, puis suivre l'onglet
+   « Performances ».
+
+### Checklist hors-site
+
+- **Google Business Profile** : catégorie « Photographe », ville « Novi Sad »,
+  site web, photos.
+- **Profils** avec un lien vers le site : LinkedIn (titre + champ site web),
+  GitHub (README + champ site), Instagram / Behance / 500px (bio).
+  Ajouter ces liens dans `profile.socials` (Sanity) pour alimenter `sameAs`.
+- **Cohérence** du nom (« Benoît » / « Benoit ») et de la localisation
+  (« Novi Sad ») sur tous les profils.
+- **Backlinks / mentions** : annuaires photo, portfolios, interviews, partages.
+
 ## Feuille de route
 
 - **Étape 1** — design system, pages et contenus locaux (fait)

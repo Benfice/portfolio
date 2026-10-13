@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/JsonLd";
 import { PageHeader } from "@/components/PageHeader";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
@@ -8,6 +9,8 @@ import { ContactForm } from "@/components/ContactForm";
 import { getProfile } from "@/lib/sanity/content";
 import { pickLocalized } from "@/lib/localized";
 import { buildPageMetadata } from "@/lib/metadata";
+import { getBaseUrl } from "@/lib/site";
+import { buildBreadcrumbs } from "@/lib/structured-data";
 
 export async function generateMetadata({
   params,
@@ -20,8 +23,8 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: "/contact",
-    title: t("title"),
-    description: t("lead"),
+    absoluteTitle: t("metaTitle"),
+    description: t("metaDescription"),
   });
 }
 
@@ -33,7 +36,16 @@ export default async function ContactPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Contact");
+  const nav = await getTranslations("Nav");
   const profile = await getProfile();
+  const breadcrumbs = buildBreadcrumbs({
+    base: getBaseUrl(),
+    locale,
+    items: [
+      { name: nav("home"), path: "/" },
+      { name: nav("contact"), path: "/contact" },
+    ],
+  });
 
   const formLabels = t.raw("form") as {
     name: string;
@@ -49,6 +61,7 @@ export default async function ContactPage({
 
   return (
     <>
+      <JsonLd data={breadcrumbs} />
       <PageHeader
         eyebrow={t("eyebrow")}
         title={t("title")}

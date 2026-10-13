@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Benoît Freulon — QA Lead & Photographer",
-    "description": "Benoît Freulon's portfolio: QA Lead profile, photography and a growing knowledge base."
+    "title": "Benoît Freulon — Photographer & QA Lead in Novi Sad",
+    "description": "Benoît Freulon's portfolio: photography in Novi Sad, QA Lead profile and a knowledge base on software quality."
   },
   "Nav": {
     "primary": "Main navigation",
@@ -41,6 +41,8 @@
   "Qa": {
     "eyebrow": "Software Quality",
     "title": "Quality, from manual testing to automation.",
+    "metaTitle": "QA Lead profile — Benoît Freulon (Novi Sad)",
+    "metaDescription": "Benoît Freulon, QA Lead in Novi Sad: test strategy, automation, shift-left and software quality assurance.",
     "lead": "Shift-left QA Lead: I help teams collaborate to ship faster without compromising quality.",
     "experienceEyebrow": "Journey",
     "experienceTitle": "Professional experience",
@@ -66,6 +68,8 @@
   "Photography": {
     "eyebrow": "Photography",
     "title": "My vision of the world in images.",
+    "metaTitle": "Photography — Benoît Freulon (Novi Sad)",
+    "metaDescription": "Benoît Freulon's photography gallery: personal series in Novi Sad and beyond — travel, architecture, portraits and everyday scenes.",
     "lead": "Moments, places and details that catch my eye and say something about the way I see the world.",
     "openPhoto": "Open the photo “{title}”",
     "close": "Close",
@@ -75,6 +79,8 @@
   "Knowledge": {
     "eyebrow": "Knowledge",
     "title": "A map of concepts that grows with me.",
+    "metaTitle": "Knowledge base — Benoît Freulon",
+    "metaDescription": "A map of concepts, methods and tools about software quality, testing and automation — by Benoît Freulon.",
     "lead": "Notes, methods and tools I keep exploring, organised on an interactive map.",
     "mapTitle": "Knowledge map",
     "mapHint": "Explore the map with the keyboard (Tab + Enter). Select a theme or a tag to highlight it, a concept to show its details.",
@@ -83,12 +89,15 @@
   },
   "About": {
     "eyebrow": "About",
+    "metaTitle": "About Benoît Freulon — Photographer & QA Lead in Novi Sad",
     "principlesTitle": "What guides me",
     "ctaButton": "Get in touch"
   },
   "Contact": {
     "eyebrow": "Contact",
     "title": "Let's talk about your project.",
+    "metaTitle": "Contact — Benoît Freulon",
+    "metaDescription": "Contact Benoît Freulon for a QA mission, a photo project or any question about software quality.",
     "lead": "A QA mission, a photo project or just want to connect? Drop me a line.",
     "emailLabel": "Email me",
     "socialsTitle": "Find me online",
