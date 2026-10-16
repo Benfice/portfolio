@@ -10,7 +10,6 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PrintButton } from "@/components/PrintButton";
 import {
   getCertifications,
-  getEducation,
   getExperience,
   getLanguages,
   getProjects,
@@ -21,6 +20,8 @@ import { pickLocalized, pickLocalizedList } from "@/lib/localized";
 import { buildPageMetadata } from "@/lib/metadata";
 import { getBaseUrl } from "@/lib/site";
 import { buildBreadcrumbs } from "@/lib/structured-data";
+
+const QA_EXPERIENCES = ["PLASSIDO", "SYNECHRON"];
 
 export async function generateMetadata({
   params,
@@ -56,16 +57,19 @@ export default async function QaPage({
     ],
   });
 
-  const [experience, projects, skillGroups, education, certifications, trainingTopics, languages] =
+  const [experience, projects, skillGroups, certifications, trainingTopics, languages] =
     await Promise.all([
       getExperience(),
       getProjects(),
       getSkillGroups(),
-      getEducation(),
       getCertifications(),
       getTrainingTopics(),
       getLanguages(),
     ]);
+
+  const qaExperience = experience.filter((item) =>
+    QA_EXPERIENCES.includes(item.company),
+  );
 
   return (
     <>
@@ -85,7 +89,7 @@ export default async function QaPage({
           />
           <div className="mt-10 border-l border-border pl-6 sm:pl-8">
             <ol className="space-y-10">
-              {experience.map((item) => (
+              {qaExperience.map((item) => (
                 <li key={item.company} className="relative">
                   {item.earlier && (
                     <h3 className="-ml-6 mb-8 border-b border-border pb-3 text-xs font-medium uppercase tracking-wide text-muted sm:-ml-8">
@@ -184,29 +188,6 @@ export default async function QaPage({
                     </li>
                   ))}
                 </ul>
-              </Card>
-            ))}
-          </div>
-        </Container>
-      </Section>
-
-      <Section className="pt-0">
-        <Container>
-          <SectionHeading
-            eyebrow={t("educationEyebrow")}
-            title={t("educationTitle")}
-          />
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {education.map((item) => (
-              <Card key={item.school} className="flex flex-col">
-                <h3 className="text-lg">{item.school}</h3>
-                <p className="mt-3 flex-1 leading-6">
-                  {pickLocalized(item.degree, locale)}
-                </p>
-                <p className="mt-4 text-sm text-muted">
-                  {pickLocalized(item.period, locale)} ·{" "}
-                  {pickLocalized(item.location, locale)}
-                </p>
               </Card>
             ))}
           </div>
