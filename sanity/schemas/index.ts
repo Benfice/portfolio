@@ -4,6 +4,8 @@ import { certification } from "./certification";
 import { education } from "./education";
 import { experience } from "./experience";
 import { journeyEvent } from "./journeyEvent";
+import { domain } from "./domain";
+import { knowledgeItem } from "./knowledgeItem";
 import { knowledgeTheme } from "./knowledgeTheme";
 import { language } from "./language";
 import { profile } from "./profile";
@@ -23,5 +25,7 @@ export const schemaTypes = [
   training,
   language,
   album,
+  domain,
+  knowledgeItem,
   knowledgeTheme,
 ];

@@ -24,6 +24,8 @@ export const CONTENT_TYPES = [
   "training",
   "language",
   "album",
+  "domain",
+  "knowledgeItem",
   "knowledgeTheme",
 ] as const;
 

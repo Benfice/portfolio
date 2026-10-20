@@ -3,7 +3,7 @@ import type { Certification } from "@/content/certifications";
 import type { Education } from "@/content/education";
 import type { Experience } from "@/content/experience";
 import type { JourneyEvent } from "@/content/journey";
-import type { KnowledgeTheme } from "@/content/knowledge";
+import type { Domain, KnowledgeItem, KnowledgeTheme } from "@/content/knowledge";
 import type { Language } from "@/content/languages";
 import type { Album } from "@/content/photos";
 import type { Profile } from "@/content/profile";
@@ -16,9 +16,11 @@ import {
   mapAbout,
   mapAlbum,
   mapCertification,
+  mapDomain,
   mapEducation,
   mapExperience,
   mapJourneyEvent,
+  mapKnowledgeItem,
   mapKnowledgeTheme,
   mapLanguage,
   mapProfile,
@@ -155,4 +157,34 @@ export async function getJourneyEvents(): Promise<JourneyEvent[]> {
     return (b.order ?? 0) - (a.order ?? 0);
   });
   return events;
+}
+
+
+export async function getDomains(): Promise<Domain[]> {
+  const documents = await fetchAllDocuments();
+  const domains = documents
+    .filter((document) => document._type === "domain")
+    .map((document) => mapDomain(document, getPhotoUrl));
+  domains.sort((a, b) => {
+    if (a.order !== b.order) return a.order - b.order;
+    return a.id.localeCompare(b.id);
+  });
+  return domains;
+}
+
+export async function getKnowledgeItems(): Promise<KnowledgeItem[]> {
+  const documents = await fetchAllDocuments();
+  const items = documents
+    .filter((document) => document._type === "knowledgeItem")
+    .map((document) => mapKnowledgeItem(document, getPhotoUrl));
+  items.sort((a, b) => {
+    if (a.order !== b.order) return a.order - b.order;
+    return a.id.localeCompare(b.id);
+  });
+  return items;
+}
+
+export async function getKnowledgeItemsByDomain(domainId: string): Promise<KnowledgeItem[]> {
+  const items = await getKnowledgeItems();
+  return items.filter((item) => item.domainId === domainId || item.domainIds.includes(domainId));
 }

@@ -4,7 +4,7 @@ import type { Certification } from "@/content/certifications";
 import type { Education } from "@/content/education";
 import type { Experience } from "@/content/experience";
 import type { JourneyCategory, JourneyEvent } from "@/content/journey";
-import type { KnowledgeTheme } from "@/content/knowledge";
+import type { Domain, KnowledgeItem, KnowledgeStatus, KnowledgeTheme } from "@/content/knowledge";
 import type { Language } from "@/content/languages";
 import type { Album, Photo, PhotoRatio } from "@/content/photos";
 import type { Profile } from "@/content/profile";
@@ -231,5 +231,77 @@ export function mapJourneyEvent(
       ? (category as JourneyCategory)
       : undefined,
     relatedLinks,
+  };
+}
+
+
+function refId(ref: unknown): string {
+  if (typeof ref === "string") return ref;
+  if (ref && typeof ref === "object") {
+    const r = ref as { _ref?: string; _id?: string };
+    return r._ref || r._id || "";
+  }
+  return "";
+}
+
+function asReferenceIds(value: unknown): string[] {
+  return asArray(value)
+    .map((item) => refId(item))
+    .filter((id) => id.length > 0);
+}
+
+export function mapDomain(
+  document: SanityDocument | undefined,
+  imageUrl: (image: { asset?: { _ref?: string } } | null | undefined) => string | null,
+): Domain {
+  return {
+    id: asString(document?._id),
+    title: asLocalized(document?.title),
+    shortDescription: document?.shortDescription ? asLocalized(document?.shortDescription) : undefined,
+    description: document?.description ? asLocalized(document?.description) : undefined,
+    order: asNumber(document?.order),
+    image: imageUrl(document?.image as { asset?: { _ref?: string } } | undefined),
+    imageAlt: document?.imageAlt ? asLocalized(document?.imageAlt) : undefined,
+    relatedDomains: asReferenceIds(document?.relatedDomains),
+  };
+}
+
+export function mapKnowledgeItem(
+  document: SanityDocument | undefined,
+  imageUrl: (image: { asset?: { _ref?: string } } | null | undefined) => string | null,
+): KnowledgeItem {
+  const status = asString(document?.status);
+  const validStatuses: KnowledgeStatus[] = ["practiced_professionally", "practiced_personal", "learning", "theoretical"];
+  const externalResources = asArray(document?.externalResources).map((res) => ({
+    label: asLocalized(res.label),
+    href: asString(res.href),
+    internal: asBoolean(res.internal),
+  }));
+  return {
+    id: asString(document?._id),
+    title: asLocalized(document?.title),
+    shortDescription: document?.shortDescription ? asLocalized(document?.shortDescription) : undefined,
+    definition: document?.definition ? asLocalized(document?.definition) : undefined,
+    explanation: document?.explanation ? asLocalized(document?.explanation) : undefined,
+    example: document?.example ? asLocalized(document?.example) : undefined,
+    practicalApplication: document?.practicalApplication
+      ? asLocalized(document?.practicalApplication)
+      : undefined,
+    domainId: refId(document?.domain) || undefined,
+    domainIds: [
+      ...new Set(
+        [refId(document?.domain), ...asReferenceIds(document?.domains)].filter((id) => id.length > 0),
+      ),
+    ],
+    category: document?.category ? asLocalized(document?.category) : undefined,
+    status: validStatuses.includes(status as KnowledgeStatus) ? (status as KnowledgeStatus) : undefined,
+    order: asNumber(document?.order),
+    image: imageUrl(document?.image as { asset?: { _ref?: string } } | undefined),
+    imageAlt: document?.imageAlt ? asLocalized(document?.imageAlt) : undefined,
+    relatedKnowledgeIds: asReferenceIds(document?.relatedKnowledge),
+    relatedProjectIds: asReferenceIds(document?.relatedProjects),
+    relatedExperienceIds: asReferenceIds(document?.relatedExperiences),
+    relatedTools: asStringList(document?.relatedTools),
+    externalResources,
   };
 }

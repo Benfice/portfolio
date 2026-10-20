@@ -187,3 +187,48 @@ export const knowledgeThemes: KnowledgeTheme[] = [
     ],
   },
 ];
+
+export type KnowledgeStatus =
+  | "practiced_professionally"
+  | "practiced_personal"
+  | "learning"
+  | "theoretical";
+
+export interface Domain {
+  id: string;
+  title: Localized;
+  shortDescription?: Localized;
+  description?: Localized;
+  order: number;
+  image?: string | null;
+  imageAlt?: Localized;
+  relatedDomains: string[];
+}
+
+export interface KnowledgeExternalResource {
+  label: Localized;
+  href: string;
+  internal?: boolean;
+}
+
+export interface KnowledgeItem {
+  id: string;
+  title: Localized;
+  shortDescription?: Localized;
+  definition?: Localized;
+  explanation?: Localized;
+  example?: Localized;
+  practicalApplication?: Localized;
+  domainId?: string;
+  domainIds: string[];
+  category?: Localized;
+  status?: KnowledgeStatus;
+  order: number;
+  image?: string | null;
+  imageAlt?: Localized;
+  relatedKnowledgeIds: string[];
+  relatedProjectIds: string[];
+  relatedExperienceIds: string[];
+  relatedTools: string[];
+  externalResources: KnowledgeExternalResource[];
+}
