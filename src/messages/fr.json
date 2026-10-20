@@ -13,8 +13,8 @@
     "photography": "Photographie",
     "qa": "QA",
     "knowledge": "Knowledge",
-    "about": "À propos",
-    "contact": "Contact"
+    "contact": "Contact",
+    "journey": "Parcours"
   },
   "Home": {
     "eyebrow": "QA Lead & Photographe",
@@ -129,5 +129,13 @@
   "Footer": {
     "nav": "Navigation de pied de page",
     "rights": "© 2026 Benoît Freulon. Tous droits réservés."
+  },
+  "Journey": {
+    "eyebrow": "Parcours",
+    "title": "Parcours de vie",
+    "lead": "Les étapes importantes de mon parcours personnel et professionnel.",
+    "metaTitle": "Parcours | Benoît Freulon",
+    "metaDescription": "Les principales étapes de mon parcours personnel et professionnel.",
+    "emptyState": "Aucun événement n'est encore publié. Il apparaîtra ici dès qu'il sera ajouté."
   }
 }

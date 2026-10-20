@@ -3,6 +3,7 @@ import type { About } from "@/content/about";
 import type { Certification } from "@/content/certifications";
 import type { Education } from "@/content/education";
 import type { Experience } from "@/content/experience";
+import type { JourneyCategory, JourneyEvent } from "@/content/journey";
 import type { KnowledgeTheme } from "@/content/knowledge";
 import type { Language } from "@/content/languages";
 import type { Album, Photo, PhotoRatio } from "@/content/photos";
@@ -188,5 +189,47 @@ export function mapKnowledgeTheme(
       summary: asLocalized(concept.summary),
       tags: asStringList(concept.tags),
     })),
+  };
+}
+
+function asNumber(value: unknown): number {
+  return typeof value === "number" ? value : 0;
+}
+
+function asOptionalNumber(value: unknown): number | undefined {
+  return typeof value === "number" ? value : undefined;
+}
+
+export function mapJourneyEvent(
+  document: SanityDocument | undefined,
+  imageUrl: (image: { asset?: { _ref?: string } } | null | undefined) => string | null,
+): JourneyEvent {
+  const category = asString(document?.category);
+  const validCategories: JourneyCategory[] = [
+    "personal",
+    "education",
+    "professional",
+    "photography",
+    "projects",
+    "learning",
+  ];
+  const relatedLinks = asArray(document?.relatedLinks).map((link) => ({
+    label: asLocalized(link.label),
+    href: asString(link.href),
+    internal: asBoolean(link.internal),
+  }));
+  return {
+    id: asString(document?._id),
+    year: asNumber(document?.year),
+    month: asOptionalNumber(document?.month),
+    order: asNumber(document?.order),
+    title: asLocalized(document?.title),
+    description: document?.description ? asLocalized(document?.description) : undefined,
+    image: imageUrl(document?.image as { asset?: { _ref?: string } } | undefined),
+    imageAlt: document?.imageAlt ? asLocalized(document?.imageAlt) : undefined,
+    category: validCategories.includes(category as JourneyCategory)
+      ? (category as JourneyCategory)
+      : undefined,
+    relatedLinks,
   };
 }

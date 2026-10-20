@@ -3,6 +3,7 @@ import { album } from "./album";
 import { certification } from "./certification";
 import { education } from "./education";
 import { experience } from "./experience";
+import { journeyEvent } from "./journeyEvent";
 import { knowledgeTheme } from "./knowledgeTheme";
 import { language } from "./language";
 import { profile } from "./profile";
@@ -13,6 +14,7 @@ import { training } from "./training";
 export const schemaTypes = [
   profile,
   about,
+  journeyEvent,
   experience,
   project,
   skillGroup,

@@ -13,8 +13,8 @@
     "photography": "Photography",
     "qa": "QA",
     "knowledge": "Knowledge",
-    "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "journey": "Journey"
   },
   "Home": {
     "eyebrow": "QA Lead & Photographer",
@@ -129,5 +129,13 @@
   "Footer": {
     "nav": "Footer navigation",
     "rights": "© 2026 Benoît Freulon. All rights reserved."
+  },
+  "Journey": {
+    "eyebrow": "Journey",
+    "title": "My journey",
+    "lead": "The key stages of my personal and professional journey.",
+    "metaTitle": "Journey | Benoît Freulon",
+    "metaDescription": "Key stages of my personal and professional journey.",
+    "emptyState": "No events have been published yet. They will appear here once added."
   }
 }

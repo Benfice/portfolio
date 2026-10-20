@@ -13,8 +13,8 @@
     "photography": "Fotografija",
     "qa": "QA",
     "knowledge": "Znanje",
-    "about": "O meni",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "journey": "Životni put"
   },
   "Home": {
     "eyebrow": "QA Lead i fotograf",
@@ -129,5 +129,13 @@
   "Footer": {
     "nav": "Navigacija u podnožju",
     "rights": "© 2026 Benoît Freulon. Sva prava zadržana."
+  },
+  "Journey": {
+    "eyebrow": "Životni put",
+    "title": "Moj životni put",
+    "lead": "Važne etape mog ličnog i profesionalnog puta.",
+    "metaTitle": "Životni put | Benoît Freulon",
+    "metaDescription": "Važne etape mog ličnog i profesionalnog puta.",
+    "emptyState": "Još uvek nema objavljenih događaja. Pojaviće se ovde čim budu dodati."
   }
 }

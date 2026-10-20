@@ -7,7 +7,7 @@ const routes = [
   "/photography",
   "/qa",
   "/knowledge",
-  "/about",
+  "/journey",
   "/contact",
 ];
 

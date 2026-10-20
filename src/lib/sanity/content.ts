@@ -2,6 +2,7 @@ import type { About } from "@/content/about";
 import type { Certification } from "@/content/certifications";
 import type { Education } from "@/content/education";
 import type { Experience } from "@/content/experience";
+import type { JourneyEvent } from "@/content/journey";
 import type { KnowledgeTheme } from "@/content/knowledge";
 import type { Language } from "@/content/languages";
 import type { Album } from "@/content/photos";
@@ -17,6 +18,7 @@ import {
   mapCertification,
   mapEducation,
   mapExperience,
+  mapJourneyEvent,
   mapKnowledgeTheme,
   mapLanguage,
   mapProfile,
@@ -137,4 +139,20 @@ export async function getAlbums(): Promise<Album[]> {
 export async function getKnowledgeThemes(): Promise<KnowledgeTheme[]> {
   const documents = await fetchAllDocuments();
   return findMany(documents, "knowledgeTheme").map(mapKnowledgeTheme);
+}
+
+
+export async function getJourneyEvents(): Promise<JourneyEvent[]> {
+  const documents = await fetchAllDocuments();
+  const events = documents
+    .filter((document) => document._type === "journeyEvent")
+    .map((document) => mapJourneyEvent(document, getPhotoUrl));
+  events.sort((a, b) => {
+    if (b.year !== a.year) return b.year - a.year;
+    const monthA = typeof a.month === "number" ? a.month : 0;
+    const monthB = typeof b.month === "number" ? b.month : 0;
+    if (monthB !== monthA) return monthB - monthA;
+    return (b.order ?? 0) - (a.order ?? 0);
+  });
+  return events;
 }

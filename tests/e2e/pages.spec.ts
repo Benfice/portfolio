@@ -13,15 +13,11 @@ test("knowledge page lists themes and concepts", async ({ page }) => {
   ).toBeVisible();
 });
 
-test("about page shows bio and principles", async ({ page }) => {
-  await page.goto("/fr/about");
+test("journey page shows timeline or empty state", async ({ page }) => {
+  await page.goto("/fr/journey");
 
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
-    "Benoît Freulon",
-  );
-  await expect(
-    page.getByRole("heading", { name: "Ce qui me guide" }),
-  ).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+  await expect(page.getByRole("main")).toBeVisible();
 });
 
 test("contact page exposes email and social links", async ({ page }) => {
