@@ -15,6 +15,7 @@ export type SanityDocument = {
 export const CONTENT_TYPES = [
   "profile",
   "about",
+  "journeyEvent",
   "experience",
   "project",
   "skillGroup",
